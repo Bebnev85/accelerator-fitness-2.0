@@ -10,10 +10,78 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
+      <div class="header-hero-wrapper">
+        <header class="header-page">
+          <div class="container">
+            <a class="header-page__logo" href="#">
+              <svg role="img" width="122" height="44" aria-label="Логотип фитнес центра SUPERGYM" focusable="false">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <a class="header-page__phone" href="tel:+78005555555">8-800-555-55-55</a>
+          </div>
+        </header>
+        <section class="hero">
+          <div class="container">
+            <div class="hero__wrapper">
+              <p>Омск</p>
+              <ul class="hero__services">
+                <li>
+                  Тренажёрный зал
+                </li>
+                <li>
+                  Групповые занятия
+                </li>
+                <li>
+                  Кардио-зона
+                </li>
+              </ul>
+              <h1>Фитнес центр</h1>
+              <button class="btn">Купить абонемент</button>
+            </div>
+            <picture">
+              <!-- <source media="(max-width: 767px)" srcset="img/mobile/our-apollo.webp, img/mobile/our-apollo@2.webp 2x" type="image/webp">
+              <source media="(min-width: 767px)" srcset="img/mobile/our-apollo.jpg, img/mobile/our-apollo@2.jpg 2x"> -->
+              <source media="(min-width: 1199px)" srcset="img/tablet/our-apollo.webp, img/tablet/our-apollo@2.webp 2x" type="image/webp">
+              <source media="(min-width: 1199px)" srcset="img/tablet/our-apollo.jpg, img/tablet/our-apollo@2.jpg 2x">
+              <source srcset="img/desctop/our-apollo.webp, img/desctop/our-apollo@2.webp 2x" type="image/webp">
+              <img src="img/desctop/our-apollo.jpg" width="500" height="556" alt="Наш аполлон.">
+            </picture>
+          </div>
+        </section>
+      </div>
       <main>
+        <section class="main-section">
+          <div class="container">
+            <div class="main-section__gim-description">
+              <h2>Тренажерный зал</h2>
+              <p>Просторный зал площадью 900 кв/м</p>
+              <div>
+                <p>
+                  Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+                  Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
+                </p>
+                <div class="desctop-only">
+                  <p>
+                    В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+                    несколько оборудованных залов для различных видов групповых занятий.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <picture">
+              <source media="(max-width: 767px)" srcset="img/mobile/gim.webp, img/mobile/gim@2.webp 2x" type="image/webp">
+              <source media="(min-width: 767px)" srcset="img/mobile/gim.jpg, img/mobile/gim@2.jpg 2x">
+              <source media="(min-width: 1199px)" srcset="img/tablet/gim.webp, img/tablet/gim@2.webp 2x" type="image/webp">
+              <source media="(min-width: 1199px)" srcset="img/tablet/gim.jpg, img/tablet/gim@2.jpg 2x">
+              <source srcset="img/desctop/gim.webp, img/desctop/gim@2.webp 2x" type="image/webp">
+              <img src="img/desctop/gim.jpg" width="500" height="556" alt="Наш спортивный зал с тренажерами.">
+            </picture>
+            <div class="main-section__gim-video">
+              <video src=""></video>
+            </div>
+          </div>
+        </section>
         <section class="intro">
           <div class="container">
             <h1>Тестовая страница.</h1>
