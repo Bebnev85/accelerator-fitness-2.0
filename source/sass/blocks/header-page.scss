@@ -2,18 +2,51 @@
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
+
+  @include vp-1199 {
+    padding-top: 40px;
+  }
+
+  @include vp-767 {
+    padding-top: 15px;
+  }
 }
 
 .header-page__logo {
   display: block;
   width: max-content;
   color: $color-default-white;
+
+  @include vp-1199 {
+    width: 82px;
+    height: 17px;
+  }
+
+  @include vp-767 {
+    width: 69px;
+    height: 24px;
+  }
 }
 
 .header-page__phone {
   font-size: 26px;
-  font-family: AlumniSans-SemiBold;
+  font-family: "AlumniSans-SemiBold", "Arial", sans-serif;
   line-height: normal;
   letter-spacing: 0.78px;
   color: $color-default-white;
+
+  @include vp-1199 {
+    font-size: 24px;
+    font-family: "AlumniSans-Bold", "Arial", sans-serif;
+    line-height: normal;
+    letter-spacing: 0.48px;
+  }
+
+  @include vp-767 {
+    padding-top: 5px;
+    font-size: 20px;
+    font-family: "AlumniSans-SemiBold", "Arial", sans-serif;
+    line-height: normal;
+    letter-spacing: 0.4px;
+  }
 }

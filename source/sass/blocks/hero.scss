@@ -1,0 +1,21 @@
+.hero {
+  display: flex;
+  justify-content: end;
+  gap: 64px;
+  padding-right: 200px;
+  padding-top: 98px;
+  padding-bottom: 51px;
+
+  @include vp-1199 {
+    gap: 30px;
+    padding-right: 0;
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
+  @include vp-1199 {
+    gap: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
