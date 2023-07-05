@@ -1,0 +1,19 @@
+.header-page {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.header-page__logo {
+  display: block;
+  width: max-content;
+  color: $color-default-white;
+}
+
+.header-page__phone {
+  font-size: 26px;
+  font-family: AlumniSans-SemiBold;
+  line-height: normal;
+  letter-spacing: 0.78px;
+  color: $color-default-white;
+}
