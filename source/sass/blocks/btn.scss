@@ -4,11 +4,19 @@
 
   color: $color-default-white;
 
-  background-color: $color-transparent;
+  background-color: $color-neon-blue;
   border: none;
   cursor: pointer;
 
   transition: opacity $trans-default;
+
+  &--red {
+    background-color: $color-torch-red;
+  }
+
+  &--transparent {
+    background-color: $color-transparent;
+  }
 
   &--dark-bg {
     color: $btn-color-white;
