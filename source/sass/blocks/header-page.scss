@@ -16,15 +16,22 @@
   display: block;
   width: max-content;
   color: $color-default-white;
+  height: 44px;
 
   @include vp-1199 {
-    width: 82px;
-    height: 17px;
+    width: 81px;
+    height: 18px;
   }
 
   @include vp-767 {
-    width: 69px;
+    width: 67px;
     height: 24px;
+  }
+
+  & svg {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -32,21 +39,21 @@
   font-size: 26px;
   font-family: "AlumniSans-SemiBold", "Arial", sans-serif;
   line-height: normal;
-  letter-spacing: 0.78px;
+  letter-spacing: 0.5px;
   color: $color-default-white;
 
   @include vp-1199 {
     font-size: 24px;
     font-family: "AlumniSans-Bold", "Arial", sans-serif;
-    line-height: normal;
-    letter-spacing: 0.48px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
   }
 
   @include vp-767 {
-    padding-top: 5px;
+    padding-top: 1px;
     font-size: 20px;
     font-family: "AlumniSans-SemiBold", "Arial", sans-serif;
     line-height: normal;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.1px;
   }
 }

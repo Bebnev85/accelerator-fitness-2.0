@@ -1,21 +1,188 @@
 .hero {
   display: flex;
   justify-content: end;
-  gap: 64px;
-  padding-right: 200px;
-  padding-top: 98px;
-  padding-bottom: 51px;
+  align-items: flex-end;
+  gap: 5.52%;
+  padding-bottom: 52px;
 
   @include vp-1199 {
-    gap: 30px;
-    padding-right: 0;
-    padding-top: 82px;
+    gap: 4.42%;
+    padding-top: 22px;
     padding-bottom: 82px;
+    align-items: flex-start;
   }
 
-  @include vp-1199 {
+  @include vp-767 {
     gap: 0;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    box-sizing: border-box;
+    padding-top: 14px;
+    padding-bottom: 78px;
+  }
+}
+
+
+.hero img {
+  margin-right: 200px;
+  margin-top: -24px;
+
+  @include vp-1199 {
+    margin-right: 0;
+    width: 324px;
+    height: 390px;
+    margin-top: 0;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__wrapper {
+  flex-grow: 1;
+  display: grid;
+  row-gap: 15px;
+  grid-template-columns: auto max-content;
+  column-gap: 13px;
+  justify-items: end;
+  color: $color-default-white;
+  padding-bottom: 42px;
+
+  @include vp-1199 {
+    row-gap: 6px;
+    column-gap: 9px;
+    margin-top: 52px;
+    padding-bottom: 0;
+  }
+
+  @include vp-767 {
+    row-gap: 10px;
+  }
+}
+
+.hero__wrapper p {
+  grid-column: 1/3;
+  min-width: 133px;
+  font-size: 41px;
+  font-family: "AlumniSans-SemiBold", "Arial", sans-serif;
+  line-height: 45px;
+  letter-spacing: 2.3px;
+  text-transform: uppercase;
+  margin: 0;
+
+  @include vp-1199 {
+    font-size: 28px;
+    line-height: 40px;
+    min-width: min-content;
+    padding-right: 3px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+  }
+}
+
+.hero__wrapper h1 {
+  grid-column: 2/3;
+  width: min-content;
+  margin: 0;
+  margin-top: 3px;
+  text-align: right;
+  font-size: 92px;
+  font-family: "AlumniSans-SemiBold", "Arial", sans-serif;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+  text-shadow:
+    -0 -2px 0 $color-default-white, 0 -2px 0 $color-default-white, -0 2px 0 $color-default-white, 0 2px 0 $color-default-white,
+    -2px -0 0 $color-default-white, 2px -0 0 $color-default-white, -2px 0 0 $color-default-white, 2px 0 0 $color-default-white,
+    -1px -2px 0 $color-default-white, 1px -2px 0 $color-default-white, -1px  2px 0 $color-default-white, 1px  2px 0 $color-default-white,
+    -2px -1px 0 $color-default-white, 2px -1px 0 $color-default-white, -2px 1px 0 $color-default-white, 2px 1px 0 $color-default-white,
+    -2px -2px 0 $color-default-white, 2px -2px 0 $color-default-white, -2px 2px 0 $color-default-white, 2px 2px 0 $color-default-white,
+    -2px -2px 0 $color-default-white, 2px -2px 0 $color-default-white, -2px 2px 0 $color-default-white, 2px 2px 0 $color-default-white;
+
+  @include vp-1199 {
+    font-size: 72px;
+    text-shadow: none;
+    -webkit-text-stroke: 3px $color-default-white;
+    line-height: 86px;
+    margin-top: 0;
+    text-transform: none;
+    letter-spacing: 3.6px;
+  }
+}
+
+.hero__wrapper a {
+  padding: 20px 55px;
+  margin-top: 33px;
+  margin-right: -1px;
+  grid-column: 1/3;
+  font-size: 12px;
+  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
+  line-height: 13px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  @include vp-1199 {
+    margin-top: 30px;
+    margin-right: -2px;
+    padding: 20px 31px;
+  }
+
+  @include vp-767 {
+    margin-top: 12px;
+    line-height: 15px;
+    justify-self: stretch;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 294px;
+  }
+
+  @include hover-focus {
+    background-color: $bg-default-white;
+    color: $color-egyptian-blue;
+    outline: none;
+  }
+
+  @include active {
+    background-color: $bg-default-white;
+    color: $color-sapphire;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+
+.hero__services {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: end;
+  margin: 0;
+  margin-bottom: 36px;
+  padding: 0;
+  padding-right: 8px;
+  font-size: 14px;
+  line-height: 150%;
+
+  @include vp-1199 {
+    padding-right: 13px;
+    width: 126px;
+    justify-self: end;
+    text-align: right;
+    letter-spacing: -0.1px;
+    margin-bottom: 20px;
+  }
+
+  @include vp-767 {
+    padding-right: 0;
+    margin-right: -17px;
+    margin-bottom: 32px;
+    width: auto;
   }
 }
