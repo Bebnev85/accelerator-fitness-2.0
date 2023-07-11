@@ -2,6 +2,10 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 
+
+const button = document.querySelector('.main-section__gim-video-conatainer');
+const video = document.getElementById('video');
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -22,6 +26,15 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
   });
+
+  // Видео
+
+  button.addEventListener('click', () => {
+    const src = video.dataset.src;
+    video.style.height = '100%';
+    video.insertAdjacentHTML('afterbegin', '<iframe src="' + src + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
+  });
+
 });
 
 // ---------------------------------
