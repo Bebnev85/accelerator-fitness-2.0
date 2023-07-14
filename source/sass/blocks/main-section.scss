@@ -8,6 +8,22 @@
     justify-content: space-between;
     align-items: flex-start;
   }
+
+  &--vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.main-section h2 {
+  font-family: "Alumni Sans", "arial", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  color: $color-sapphire;
+  margin: 0;
+  width: max-content;
 }
 
 .main-section__gim-description {
@@ -20,12 +36,6 @@
 }
 
 .main-section__gim-description h2 {
-  font-family: "Alumni Sans", "arial", sans-serif;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 58px;
-  color: $color-sapphire;
-  margin: 0;
   margin-top: 49px;
 }
 
