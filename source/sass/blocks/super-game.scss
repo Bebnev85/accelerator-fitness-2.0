@@ -1,0 +1,89 @@
+.super-game {
+  flex-wrap: nowrap;
+}
+
+.super-game__content-wrapper {
+  padding: 85px 79px 87px 78px;
+  background-color: $bg-torch-red;
+  flex-grow: 1;
+  color: $color-default-white;
+  display: grid;
+  grid-template-columns: max-content max-content;
+}
+
+.super-game h2 {
+  color: $color-default-white;
+  text-align: center;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 82px;
+  font-weight: 600;
+  line-height: 96%;
+  letter-spacing: 2.46px;
+  text-transform: uppercase;
+  width: min-content;
+}
+
+.super-game__shedule-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.super-game__shedule {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  width: max-content;
+}
+
+.super-game__shedule h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+  border-bottom: 1px solid $color-default-white;
+  padding-bottom: 12px;
+}
+
+.super-game__shedule div {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47px;
+  display: flex;
+  gap: 7px;
+}
+
+.super-game__shedule p {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+}
+
+.super-game__description {
+  grid-column: 1/3;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  width: 100%;
+  text-align: center;
+}
+
+.super-game__content-wrapper a {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  width: 100%;
+  border: 4px solid $color-default-white;
+  grid-column: 1/3;
+  padding: 29px;
+  text-align: center;
+  color: $color-default-white;
+}
