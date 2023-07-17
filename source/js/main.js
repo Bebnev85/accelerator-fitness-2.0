@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {sliderCoachInit} from './modules/sliders';
 
 
 const button = document.querySelector('.main-section__gim-video-conatainer');
@@ -58,6 +59,9 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
+
+  sliderCoachInit();
+
 });
 
 // ---------------------------------

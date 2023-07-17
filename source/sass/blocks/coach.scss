@@ -1,0 +1,75 @@
+.coach {
+  position: relative;
+  display: block;
+  width: 260px;
+  height: 294px;
+
+  @include hover-focus {
+    & .coach__info {
+      display: block;
+    }
+
+    & .coach__name {
+      display: none;
+    }
+  }
+}
+
+.coach img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.coach__name p {
+  color: $color-default-white;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.coach__info {
+  display: none;
+  background-color: rgba(16, 38, 84, 0.89);
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+}
+
+.coach__info h3 {
+  color: $color-default-white;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0;
+  text-align: center;
+}
+
+.coach__info p {
+  color: #b6bdcc;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+  text-align: center;
+}
+
+.coach__info ul {
+  color: $color-default-white;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+}
