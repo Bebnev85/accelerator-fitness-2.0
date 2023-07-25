@@ -662,15 +662,47 @@
             <div class="reviews-swiper__button-next"></div>
           </div>
         </section>
-        <!-- <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-          </div>
-        </section> -->
+        <div class="section-wrapper main-section main-section--flex">
+          <section class="form-bonus">
+            <div class="form-bonus__container">
+              <h2>Бесплатное занятие</h2>
+              <div data-form-validate data-callback="callback">
+                <form action="get" data-on-input-validate>
+                  <div class="form-bonus__input-wrapper" data-validate-type="text" data-required data-message-base="Поле обязательно к заполнению">
+                    <input type="text" name="name" placeholder="Имя" required aria-label="Ваше имя">
+                  </div>
+                  <div class="form-bonus__input-wrapper" data-validate-type="phone" data-required data-message-base="Поле обязательно к заполнению">
+                    <input type="phone" name="phone" placeholder="Телефоон" required aria-label="Ваш телфон">
+                  </div>
+                  <button type="submit">Отправить</button>
+                </form>
+              </div>
+            </div>
+          </section>
+          <section class="contacts">
+            <h2>Контакты</h2>
+            <div class="contacts__wrapper">
+              <ul>
+                <li>
+                  <h3>Адрес:</h3>
+                  <p>г. Омск, ул. 60 лет Октября, 7</p>
+                </li>
+                <li>
+                  <h3>График работы:</h3>
+                  <p>Пн-Вс: с 8:00 до 22:00</p>
+                </li>
+                <li>
+                  <h3>Телефон:</h3>
+                  <p>8-800-555-55-55</p>
+                </li>
+                <li>
+                  <h3>Email:</h3>
+                  <p>omsk@supergym.ru</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </main>
       <footer class="main-footer">
         <div class="container main-footer__wrapper">

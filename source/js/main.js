@@ -70,6 +70,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
   sliderReviewsInit();
 
+  const form = new Form();
+  form.init();
+  window.form = form;
 });
 
 // ---------------------------------
