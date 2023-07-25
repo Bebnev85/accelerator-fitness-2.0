@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {sliderCoachInit} from './modules/sliders';
+import {sliderCoachInit, sliderReviewsInit} from './modules/sliders';
 import {initTabs, tabs} from './utils/tabs/init-tabs';
 import {accordions, initAccordions} from './utils/acordion/init-accordion';
 
@@ -67,6 +67,8 @@ window.addEventListener('DOMContentLoaded', () => {
   sliderCoachInit();
 
   initAccordions();
+
+  sliderReviewsInit();
 
 });
 

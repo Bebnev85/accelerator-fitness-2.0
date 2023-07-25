@@ -24,3 +24,17 @@ export const sliderCoachInit = () => {
     },
   });
 };
+
+export const sliderReviewsInit = () => {
+  const swiper = new Swiper('.reviews-swiper__container', {
+    navigation: {
+      nextEl: '.reviews-swiper__button-next',
+      prevEl: '.reviews-swiper__button-prev',
+    },
+
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+  });
+};
