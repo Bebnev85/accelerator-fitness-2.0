@@ -14,9 +14,38 @@
     flex-direction: column;
     align-items: center;
   }
+
+  &--coach-swiper {
+    padding-top: 0;
+    padding-bottom: 104px;
+  }
+
+  &--event {
+    padding-top: 144px;
+  }
+
+  &--contacts {
+    padding-top: 0px;
+  }
 }
 
 .main-section h2 {
+  color: $color-sapphire;
+  font-family: "Alumni Sans", "arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.62px;
+  margin: 0;
+}
+
+.main-section--coach-swiper h2 {
+  line-height: 66%;
+  margin-bottom: 65px;
+}
+
+
+.main-section__gim-description h2 {
   font-family: "Alumni Sans", "arial", sans-serif;
   font-weight: 600;
   font-size: 48px;
@@ -24,19 +53,20 @@
   color: $color-sapphire;
   margin: 0;
   width: max-content;
+  letter-spacing: 1.1px;
 }
 
 .main-section__gim-description {
   min-width: 355px;
   padding-left: 60px;
-  width: 355px;
+  width: 420px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 8px;
 }
 
 .main-section__gim-description h2 {
-  margin-top: 49px;
+  margin-top: 39px;
 }
 
 .main-section__gim-description span {
@@ -53,6 +83,7 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 150%;
+  margin-bottom: 8px;
 }
 
 .main-section__desctop-only {
@@ -61,12 +92,16 @@
   }
 }
 
+.main-section__desctop-only p {
+  margin: 0;
+}
+
 .main-section__gim-video-wrapper {
   padding-right: 359px;
   flex-grow: 1;
   display: flex;
   flex-direction: row-reverse;
-  margin-top: -50px;
+  margin-top: -113px;
 }
 
 .main-section__gim-video-conatainer {
@@ -141,4 +176,19 @@
   left: 0;
   width: 100%;
   height: 0;
+}
+
+.main-sectuin__gim-text {
+  margin-top: 14px;
+}
+
+.main-section__gim-img img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-section__gim-img {
+  width: 660px;
+  height: 401px;
 }

@@ -1,11 +1,10 @@
 .form-bonus {
   width: 50%;
   background-color: $bg-sapphire;
-  padding: 56px 170px 70px 0;
+  padding: 64px 170px 68px 0;
   display: flex;
   justify-content: end;
   box-sizing: border-box;
-  align-self: stretch;
 }
 
 .form-bonus container {
@@ -14,12 +13,15 @@
 
 .form-bonus h2 {
   color: $color-default-white;
+  letter-spacing: 1.9px;
+  margin-bottom: 27px;
 }
 
 .form-bonus form {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  row-gap: 28px;
   width: 410px;
 }
 
@@ -29,7 +31,7 @@
   border: 3px solid $color-default-white;
   border-radius: 0;
   width: 100%;
-  padding: 21px 0;
+  padding: 16px 0;
   font-size: 14px;
   font-weight: 700;
   line-height: normal;
@@ -41,7 +43,7 @@
 .form-bonus input {
   border: none;
   border-bottom: 1px solid #74819c;
-  padding: 10px 0;
+  padding: 3px 0;
   background-color: $color-transparent;
   width: 100%;
   font-size: 14px;

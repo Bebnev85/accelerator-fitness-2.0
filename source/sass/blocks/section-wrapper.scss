@@ -1,7 +1,17 @@
 .section-wrapper {
   background-color: $bg-default-white;
+  position: relative;
 
   &--gray {
     background-color: $bg-ghost-white;
   }
+}
+
+.section-wrapper__img-background {
+  bottom: -150px;
+  right: 0px;
+  display: block;
+  width: 288px;
+  height: 495px;
+  position: absolute;
 }

@@ -18,7 +18,7 @@
 
 .tabs__trigger-item {
   color: $color-sapphire;
-  padding: 18px 0;
+  padding: 18px 0 10px;
   margin-bottom: -2px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
@@ -58,9 +58,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 22px;
+  gap: 10px;
   background-color: $bg-default-white;
-  padding-top: 68px;
+  padding-top: 62px;
   padding-bottom: 68px;
   min-width: 360px;
   box-sizing: border-box;
@@ -68,14 +68,14 @@
   z-index: 1;
 
   @include hover-focus {
-    padding-top: 61px;
+    padding-top: 55px;
     padding-bottom: 61px;
     border: 7px solid transparent;
     border-image: linear-gradient(151deg, #ed0233 0%, #003Eb7 100%);
     border-image-slice: 1;
 
     & a {
-      padding: 29px 46px 30px 47px;
+      padding: 29px 46px 22px 42px;
       border: none;
       background-image: $btn-gradient;
       color: $color-default-white;
@@ -137,12 +137,13 @@
   line-height: normal;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  padding: 27px 44px 28px 45px;
+  padding: 25px 43px 23px 44px;
   border: 2px solid $bg-sapphire;
+  margin-top: 24px;
   cursor: pointer;
 
   @include hover-focus {
-    padding: 29px 46px 30px 47px;
+    padding: 20px 46px 30px 47px;
     border: none;
     background-image: $btn-gradient;
     color: $color-default-white;
@@ -159,4 +160,14 @@
     opacity: 0.3;
     cursor: default;
   }
+}
+
+.tabs__price {
+  margin-top: 55px;
+}
+
+.tabs__content-wrapper {
+  position: relative;
+  background-image: attr(data-bg url);
+  background-repeat: no-repeat;
 }

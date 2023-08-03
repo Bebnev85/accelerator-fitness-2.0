@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {sliderCoachInit, sliderReviewsInit} from './modules/sliders';
 import {initTabs, tabs} from './utils/tabs/init-tabs';
 import {accordions, initAccordions} from './utils/acordion/init-accordion';
+import { initImgBg } from './modules/init-bg-image';
 
 
 const button = document.querySelector('.main-section__gim-video-conatainer');
@@ -26,6 +27,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
+
+  // Инициализация фонового изображения
+  initImgBg();
+
   window.addEventListener('load', () => {
     initModals();
     const form = new Form();

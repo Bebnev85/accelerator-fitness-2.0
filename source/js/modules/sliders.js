@@ -1,8 +1,8 @@
 export const sliderCoachInit = () => {
   const swiper = new Swiper('.coach-swiper__container', {
     navigation: {
-      nextEl: '.coach-swiper__button-next',
-      prevEl: '.coach-swiper__button-prev',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
     },
 
     direction: 'horizontal',

@@ -1,9 +1,10 @@
 .event {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 41px;
   align-items: stretch;
   flex-direction: row;
+  margin-top: 33px;
 }
 
 .event__img-block {
@@ -14,6 +15,7 @@
 
 .event__img-content {
   padding: 45px;
+  padding-top: 34px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -32,7 +34,8 @@
 .event__img-price p {
   font-size: 70px;
   font-weight: 700;
-  line-height: 156%;
+  line-height: 83%;
+  margin-bottom: 25px;
 }
 
 .event__img-price span {
@@ -43,7 +46,6 @@
 
 .event a {
   text-transform: uppercase;
-  padding-bottom: 5px;
   border-bottom: 1px solid #1c3374;
   color: #1c3374;
   font-size: 12px;
@@ -71,7 +73,7 @@
 }
 
 .event li {
-  padding: 35px;
+  padding: 27px;
   color: #1c3374;
   flex-grow: 1;
   display: flex;
@@ -88,7 +90,8 @@
   margin: 0;
   font-size: 26px;
   font-weight: 700;
-  line-height: 150%;
+  line-height: 90%;
+  margin-bottom: 9px;
 }
 
 .event ul p {

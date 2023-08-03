@@ -49,7 +49,7 @@
             <div class="main-section__gim-description">
               <h2>Тренажерный зал</h2>
               <span>Просторный зал площадью 900 кв/м</span>
-              <div>
+              <div class="main-sectuin__gim-text">
                 <p>
                   Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
                   Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
@@ -62,14 +62,16 @@
                 </div>
               </div>
             </div>
-            <picture>
-              <source media="(max-width: 767px)" srcset="img/mobile/gim.webp, img/mobile/gim@2.webp 2x" type="image/webp">
-              <source media="(min-width: 767px)" srcset="img/mobile/gim.jpg, img/mobile/gim@2.jpg 2x">
-              <source media="(min-width: 1199px)" srcset="img/tablet/gim.webp, img/tablet/gim@2.webp 2x" type="image/webp">
-              <source media="(min-width: 1199px)" srcset="img/tablet/gim.jpg, img/tablet/gim@2.jpg 2x">
-              <source srcset="img/desctop/gim.webp, img/desctop/gim@2.webp 2x" type="image/webp">
-              <img src="img/desctop/gim.jpg" width="500" height="556" alt="Наш спортивный зал с тренажерами.">
-            </picture>
+            <div class="main-section__gim-img">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/mobile/gim.webp, img/mobile/gim@2.webp 2x" type="image/webp">
+                <source media="(min-width: 767px)" srcset="img/mobile/gim.jpg, img/mobile/gim@2.jpg 2x">
+                <source media="(min-width: 1199px)" srcset="img/tablet/gim.webp, img/tablet/gim@2.webp 2x" type="image/webp">
+                <source media="(min-width: 1199px)" srcset="img/tablet/gim.jpg, img/tablet/gim@2.jpg 2x">
+                <source srcset="img/desctop/gim.webp, img/desctop/gim@2.webp 2x" type="image/webp">
+                <img src="img/desctop/gim.jpg" width="661" height="402" alt="Наш спортивный зал с тренажерами.">
+              </picture>
+            </div>
             <div class="main-section__gim-video-wrapper">
               <div>
                 <div class="main-section__gim-video-conatainer">
@@ -94,7 +96,7 @@
             </div>
           </div>
         </section>
-        <section class="section-wrapper section-wrapper--gray">
+        <section class="section-wrapper section-wrapper--gray" data-bg="img/desctop/pancakes.png">
           <div class="container main-section main-section--vertical">
             <h2>Абонементы</h2>
             <div class="tabs">
@@ -118,7 +120,7 @@
                     </div>
                     <a>Купить абонемент</a>
                   </div>
-                  <div class="tabs__card">
+                  <div class="tabs__card tabs__card--active">
                     <h3>Дневной</h3>
                     <p>с 8:00 до 17:00</p>
                     <div class="tabs__price">
@@ -269,7 +271,7 @@
           </div>
         </section>
         <section class="section-wrapper">
-          <div class="container main-section coach-swiper">
+          <div class="container main-section main-section--coach-swiper coach-swiper">
             <h2>Тренеры</h2>
             <div class="coach-swiper__container swiper">
               <div class="swiper-wrapper">
@@ -288,7 +290,7 @@
                       <ul>
                         <li>Certified Level 3 Trainer</li>
                         <li>Победитель чемпионата России по CrossFit</li>
-                        <li>Опыт — 6 лет</li>
+                        <li>Опыт - 6 лет</li>
                       </ul>
                     </div>
                   </a>
@@ -308,7 +310,7 @@
                       <ul>
                         <li>Certified Level 3 Trainer</li>
                         <li>Победитель чемпионата России по CrossFit</li>
-                        <li>Опыт — 6 лет</li>
+                        <li>Опыт - 6 лет</li>
                       </ul>
                     </div>
                   </a>
@@ -328,7 +330,7 @@
                       <ul>
                         <li>Certified Level 3 Trainer</li>
                         <li>Победитель чемпионата России по CrossFit</li>
-                        <li>Опыт — 6 лет</li>
+                        <li>Опыт - 6 лет</li>
                       </ul>
                     </div>
                   </a>
@@ -348,7 +350,7 @@
                       <ul>
                         <li>Certified Level 3 Trainer</li>
                         <li>Победитель чемпионата России по CrossFit</li>
-                        <li>Опыт — 6 лет</li>
+                        <li>Опыт - 6 лет</li>
                       </ul>
                     </div>
                   </a>
@@ -368,7 +370,7 @@
                       <ul>
                         <li>Certified Level 3 Trainer</li>
                         <li>Победитель чемпионата России по CrossFit</li>
-                        <li>Опыт — 6 лет</li>
+                        <li>Опыт - 6 лет</li>
                       </ul>
                     </div>
                   </a>
@@ -388,7 +390,7 @@
                       <ul>
                         <li>Certified Level 3 Trainer</li>
                         <li>Победитель чемпионата России по CrossFit</li>
-                        <li>Опыт — 6 лет</li>
+                        <li>Опыт - 6 лет</li>
                       </ul>
                     </div>
                   </a>
@@ -408,7 +410,7 @@
                       <ul>
                         <li>Certified Level 3 Trainer</li>
                         <li>Победитель чемпионата России по CrossFit</li>
-                        <li>Опыт — 6 лет</li>
+                        <li>Опыт - 6 лет</li>
                       </ul>
                     </div>
                   </a>
@@ -428,66 +430,74 @@
                       <ul>
                         <li>Certified Level 3 Trainer</li>
                         <li>Победитель чемпионата России по CrossFit</li>
-                        <li>Опыт — 6 лет</li>
+                        <li>Опыт - 6 лет</li>
                       </ul>
                     </div>
                   </a>
                 </div>
               </div>
             </div>
-            <div class="coach-swiper__button-prev"></div>
-            <div class="coach-swiper__button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </section>
-        <section class="section-wrapper section-wrapper--gray">
-          <div class="advantages">
+        <section class="section-wrapper section-wrapper--gray advantages">
+          <div class="advantages__container container">
             <h2>Наши преимущества</h2>
-            <div class="advantages__wrapper">
-              <div class="advantages__item">
-                <div class="advantages__count">
-                  <p>900</p>
+            <ul class="advantages__list advantages__wrapper">
+              <li class="advantages__item advantages__item--center">
+                <div class="advantages__number">
+                  <span>100</span>
+                  <span>Тренажеров</span>
+                </div>
+                <div class="advantages__content">
+                  <p>Современные тренажеры на&nbsp;все группы мышц</p>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__number">
+                  <span>900</span>
                   <span>кв/м</span>
                 </div>
-                <h3>Площадь </h3>
-                <p>Занимайтесь без очередей и толпучки</p>
-              </div>
-              <div class="advantages__item">
-                <div class="advantages__count">
-                  <p>70</p>
+                <div class="advantages__content">
+                  <h3>Площадь</h3>
+                  <p>Занимайтесь без очередей и&nbsp;толпучки</p>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__number advantages__number--column">
+                  <span>70</span>
                   <span>машин</span>
                 </div>
-                <h3>Собственная парковка</h3>
-                <p>Вы всегда найдете место для своей машины на нашей парковке</p>
-              </div>
-            </div>
-            <div class="advantages__wrapper-bg">
-              <div class="advantages__count advantages__count--dark-bg">
-                <p>100</p>
-                <span>Тренажеров</span>
-              </div>
-              <p>Современные тренажеры на все группы мышц</p>
-            </div>
-            <div class="advantages__wrapper">
-              <div class="advantages__item">
-                <div class="advantages__count">
-                  <p>350</p>
+                <div class="advantages__content">
+                  <h3>Собственная парковка</h3>
+                  <p>Вы&nbsp;всегда найдете место для своей&nbsp;машины на&nbsp;нашей парковке</p>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__number">
+                  <span>350</span>
                   <span>мест</span>
                 </div>
-                <h3>Комфорт</h3>
-                <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-              </div>
-              <div class="advantages__item">
-                <div class="advantages__count">
-                  <p>5+</p>
+                <div class="advantages__content">
+                  <h3>Комфорт</h3>
+                  <p>Просторные раздевалки, душевые,фен,Wi-Fi, кулеры</p>
+                </div>
+              </li>
+              <li class=" advantages__item">
+                <div class="advantages__number advantages__number--column">
+                  <span>5+</span>
                   <span>лет</span>
                 </div>
-                <h3>Тренерский опыт</h3>
-                <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
-              </div>
-            </div>
+                <div class="advantages__content">
+                  <h3>Тренерский опыт</h3>
+                  <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
-        <section class="section-wrapper main-section main-section--vertical">
+        <section class="section-wrapper main-section main-section--vertical main-section--event">
           <h2>Акции</h2>
           <div class="container event">
             <div class="event__img-block">
@@ -662,7 +672,7 @@
             <div class="reviews-swiper__button-next"></div>
           </div>
         </section>
-        <div class="section-wrapper main-section main-section--flex">
+        <div class="section-wrapper main-section main-section--flex main-section--contacts">
           <section class="form-bonus">
             <div class="form-bonus__container">
               <h2>Бесплатное занятие</h2>
@@ -672,7 +682,7 @@
                     <input type="text" name="name" placeholder="Имя" required aria-label="Ваше имя">
                   </div>
                   <div class="form-bonus__input-wrapper" data-validate-type="phone" data-required data-message-base="Поле обязательно к заполнению">
-                    <input type="phone" name="phone" placeholder="Телефоон" required aria-label="Ваш телфон">
+                    <input type="phone" name="phone" placeholder="Телефон" required aria-label="Ваш телфон">
                   </div>
                   <button type="submit">Отправить</button>
                 </form>

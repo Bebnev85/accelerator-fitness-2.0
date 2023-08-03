@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+  margin-bottom: 120px;
 }
 
 .faq h2 {
@@ -11,12 +12,15 @@
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.62px;
+  margin-top: 120px;
+  letter-spacing: 0.9px;
+  margin-bottom: 0;
 }
 
 .faq__tabs-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 
   &--content {
     flex-grow: 1;
@@ -109,9 +113,10 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 120%;
-  min-height: 92px;
+  min-height: 90px;
   display: flex;
   align-items: center;
+  letter-spacing: -0.1px;
 }
 
 .faq__accordion-wrapper [data-accordion=content] {
@@ -132,6 +137,13 @@
   &::before {
     background-color: $bg-default-white;
   }
+}
+
+.faq [data-accordion=element].is-active>[data-accordion=content] {
+  margin-top: -23px;
+  margin-bottom: 23px;
+  width: 660px;
+  letter-spacing: -.1px;
 }
 
 
