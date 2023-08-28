@@ -32,9 +32,9 @@ export const sliderReviewsInit = () => {
       prevEl: '.reviews-swiper__button-prev',
     },
 
-    direction: 'horizontal',
+    watchSlidesProgress: true,
     loop: false,
+    autoHeight: true,
     slidesPerView: 1,
-    slidesPerGroup: 1,
   });
 };

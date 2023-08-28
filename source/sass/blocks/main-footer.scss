@@ -4,6 +4,15 @@
   padding-bottom: 32px;
   margin-top: -120px;
   z-index: 100;
+
+  @include vp-1199 {
+    margin-top: -122px;
+  }
+
+  @include vp-767 {
+    margin-top: -41px;
+    padding-top: 50px;
+  }
 }
 
 .main-footer svg {
@@ -17,12 +26,44 @@
 
   @include vp-767 {
     flex-direction: column;
-    gap: 40px;
+    gap: 35px;
   }
 }
 
 .main-footer__logo {
   color: $color-default-white;
+
+
+  @include hover {
+    opacity: 0.8;
+  }
+
+  @include focus {
+    border: 1px solid $color-default-white;
+    padding: 0 9px;
+    outline: none;
+  }
+
+  @include active {
+    border: none;
+    padding: 0 10px;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.main-footer__logo svg {
+  @include vp-1199 {
+    width: 79px;
+    height: 27px;
+  }
+
+  @include vp-767 {
+    width: 66px;
+    height: 15px;
+  }
 }
 
 .main-footer__nav {
@@ -33,11 +74,22 @@
   align-items: start;
   margin-left: 48px;
 
+  @include vp-1199 {
+    margin-left: 56px;
+    margin-top: 2px;
+    gap: 10px;
+  }
+
   @include vp-767 {
     display: grid;
+    grid-auto-flow: column;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: -52px;
-    row-gap: 20px;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0;
+    margin-top: -53px;
+    gap: 76px;
+    row-gap: 18px;
+    justify-content: start;
 
     &::before {
       content: "";
@@ -53,6 +105,12 @@
   font-size: 14px;
   line-height: 22px;
   letter-spacing: -0.7px;
+
+  @include vp-767 {
+    padding: 0;
+    padding-left: 1px;
+    letter-spacing: 0.1px;
+  }
 
   @include hover {
     & span {
@@ -94,6 +152,15 @@
   list-style-type: none;
   gap: 11px;
   margin: 0;
+
+  @include vp-1199 {
+    padding-left: 34px;
+    padding-top: 4px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
 }
 
 .main-footer__social-list a {

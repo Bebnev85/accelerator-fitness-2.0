@@ -3,13 +3,26 @@
   flex-direction: column;
   gap: 39px;
   align-items: center;
+
+  @include vp-767 {
+    gap: 28px;
+  }
 }
 
 .tabs__trigger-wrapper {
   display: flex;
   justify-content: center;
   gap: 46px;
-  border-bottom: 2px solid rgba($color: #787878, $alpha: 0.2)
+  border-bottom: 2px solid rgba($color: #787878, $alpha: 0.2);
+
+  @include vp-1199 {
+    margin-top: 13px;
+    gap: 54px;
+  }
+
+  @include vp-767 {
+    gap: 43px;
+  }
 }
 
 .tabs__trigger-item span {
@@ -24,6 +37,17 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 150%;
+
+  @include vp-1199 {
+    letter-spacing: -0.99px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    padding-top: 15px;
+    letter-spacing: 0.1px;
+    padding-bottom: 12px;
+  }
 
   @include hover-focus {
     border-bottom: 2px solid rgba($color: #D10A42, $alpha: 0.8);
@@ -51,6 +75,11 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
+
+    @include vp-767 {
+      flex-direction: column;
+      gap: 34px;
+    }
   }
 }
 
@@ -67,6 +96,17 @@
   position: relative;
   z-index: 1;
 
+  @include vp-1199 {
+    width: 445px;
+  }
+
+  @include vp-767 {
+    min-width: 290px;
+    width: 100%;
+    padding-top: 52px;
+    padding-bottom: 55px;
+  }
+
   @include hover-focus {
     padding-top: 55px;
     padding-bottom: 61px;
@@ -74,11 +114,20 @@
     border-image: linear-gradient(151deg, #ed0233 0%, #003Eb7 100%);
     border-image-slice: 1;
 
+    @include vp-767 {
+      padding-top: 45px;
+      padding-bottom: 47px;
+    }
+
     & a {
       padding: 29px 46px 22px 42px;
       border: none;
       background-image: $btn-gradient;
       color: $color-default-white;
+
+      @include vp-767 {
+        padding: 27px 45px 25px 46px;
+      }
     }
   }
 }
@@ -91,6 +140,10 @@
   font-weight: 700;
   line-height: 110.156%;
   margin: 0;
+
+  @include vp-767 {
+    font-size: 22px;
+  }
 }
 
 .tabs__card p {
@@ -112,6 +165,11 @@
   position: relative;
   z-index: 1;
 
+  @include vp-767 {
+    font-size: 48px;
+    line-height: 100%;
+  }
+
   &::before {
     content: attr(data-price);
 
@@ -126,7 +184,15 @@
 
     color: #e8e8e8;
     opacity: 0.48;
+
+    @include vp-767 {
+      font-size: 80px;
+    }
   }
+}
+
+.tabs__price svg {
+  height: 34px;
 }
 
 .tabs__card a {
@@ -142,8 +208,16 @@
   margin-top: 24px;
   cursor: pointer;
 
+  @include vp-1199 {
+    margin-top: 25px;
+  }
+
+  @include vp-767 {
+    margin-top: 31px;
+  }
+
   @include hover-focus {
-    padding: 20px 46px 30px 47px;
+    padding: 27px 45px 25px 46px;
     border: none;
     background-image: $btn-gradient;
     color: $color-default-white;
@@ -168,6 +242,10 @@
 
 .tabs__content-wrapper {
   position: relative;
-  background-image: attr(data-bg url);
-  background-repeat: no-repeat;
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+  }
 }

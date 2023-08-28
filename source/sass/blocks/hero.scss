@@ -7,7 +7,7 @@
 
   @include vp-1199 {
     gap: 4.42%;
-    padding-top: 22px;
+    padding-top: 12px;
     padding-bottom: 82px;
     align-items: flex-start;
   }
@@ -15,7 +15,7 @@
   @include vp-767 {
     gap: 0;
     box-sizing: border-box;
-    padding-top: 14px;
+    padding-top: 7px;
     padding-bottom: 78px;
   }
 }

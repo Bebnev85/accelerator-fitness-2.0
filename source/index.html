@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ФИТНЕС ЦЕНТР">
+    <title>ФИТНЕС ЦЕНТР SUPERGYM</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="preload" href="fonts/alumnisans-semibold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/robotocondensed-light.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/robotocondensed-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper">
@@ -45,13 +52,13 @@
       </div>
       <main>
         <section class="section-wrapper">
-          <div class="container main-section main-section--flex">
-            <div class="main-section__gim-description">
+          <div class="main-section main-section--flex">
+            <div class="container main-section__gim-description">
               <h2>Тренажерный зал</h2>
               <span>Просторный зал площадью 900 кв/м</span>
               <div class="main-sectuin__gim-text">
                 <p>
-                  Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+                  Supergym - самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
                   Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
                 </p>
                 <div class="main-section__desctop-only">
@@ -62,7 +69,7 @@
                 </div>
               </div>
             </div>
-            <div class="main-section__gim-img">
+            <div class="container container--no-mobile main-section__gim-img">
               <picture>
                 <source media="(max-width: 767px)" srcset="img/mobile/gim.webp, img/mobile/gim@2.webp 2x" type="image/webp">
                 <source media="(min-width: 767px)" srcset="img/mobile/gim.jpg, img/mobile/gim@2.jpg 2x">
@@ -72,31 +79,29 @@
                 <img src="img/desctop/gim.jpg" width="661" height="402" alt="Наш спортивный зал с тренажерами.">
               </picture>
             </div>
-            <div class="main-section__gim-video-wrapper">
-              <div>
-                <div class="main-section__gim-video-conatainer">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/video.webp, img/mobile/video@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/tablet/video.webp, img/tablet/video@2x.webp 2x">
-                    <source type="image/webp" srcset="img/desctop/video.webp, img/desctop/video@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/mobile/video.jpg, img/mobile/video@2x.jpg 2x">
-                    <source media="(max-width: 1199px)" srcset="img/tablet/video.jpg, img/tablet/video@2x.jpg 2x">
-                    <img src="img/desctop/video.jpg" srcset="img/desctop/video@2x.jpg 2x" width="364" height="228" alt="Видео">
-                  </picture>
-                  <div class="main-section__play">
-                    <button>
-                      <svg role="img" width="17" height="17" aria-label="Включить видео" focusable="false">
-                        <use xlink:href="img/sprite.svg#play-triangle"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="main-section__video" id="video" data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1"></div>
+            <div class="container container--no-mobile main-section__gim-video-wrapper">
+              <div class="main-section__gim-video-conatainer">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/video.webp, img/mobile/video@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/tablet/video.webp, img/tablet/video@2x.webp 2x">
+                  <source type="image/webp" srcset="img/desctop/video.webp, img/desctop/video@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/mobile/video.jpg, img/mobile/video@2x.jpg 2x">
+                  <source media="(max-width: 1199px)" srcset="img/tablet/video.jpg, img/tablet/video@2x.jpg 2x">
+                  <img src="img/desctop/video.jpg" srcset="img/desctop/video@2x.jpg 2x" width="364" height="228" alt="Видео">
+                </picture>
+                <div class="main-section__play">
+                  <button>
+                    <svg role="img" width="17" height="17" aria-label="Включить видео" focusable="false">
+                      <use xlink:href="img/sprite.svg#play-triangle"></use>
+                    </svg>
+                  </button>
                 </div>
+                <div class="main-section__video" id="video" data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1"></div>
               </div>
             </div>
           </div>
         </section>
-        <section class="section-wrapper section-wrapper--gray" data-bg="img/desctop/pancakes.png">
+        <section class="section-wrapper section-wrapper--gray" data-bgdesctop="img/desctop/pancakes.png" data-bgtablet="img/tablet/pancakes.png">
           <div class="container main-section main-section--vertical">
             <h2>Абонементы</h2>
             <div class="tabs">
@@ -437,8 +442,16 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <button class="swiper-button-prev coach__swiper-button coach__swiper-button--prev" type="button">
+              <svg width="16" height="32">
+                <use xlink:href="img/sprite.svg#next-slide"></use>
+              </svg>
+            </button>
+            <button class="swiper-button-next coach__swiper-button coach__swiper-button--next" type="button">
+              <svg width="16" height="32">
+                <use xlink:href="img/sprite.svg#next-slide"></use>
+              </svg>
+            </button>
           </div>
         </section>
         <section class="section-wrapper section-wrapper--gray advantages">
@@ -598,7 +611,7 @@
                     <p data-accordion="content">Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.</p>
                   </li>
                   <li data-accordion="element">
-                    <p>Проводятся ли в клубе какие-либо мероприятия или&nbsp;соревнования?</p>
+                    <p>Проводятся ли в клубе<br>какие-либо мероприятия или&nbsp;соревнования?</p>
                     <button data-accordion="button" aria-lanel="Показать/скрыть"></button>
                     <p data-accordion="content">Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.</p>
                   </li>
@@ -641,7 +654,7 @@
             </ul>
           </div>
         </section>
-        <section class="section-wrapper main-section main-section--vertical">
+        <section class="section-wrapper main-section main-section--vertical main-section--reviews">
           <h2>Отзывы</h2>
           <div class="container reviews-swiper">
             <div class="reviews-swiper__container swiper">
@@ -668,8 +681,16 @@
                 </div>
               </div>
             </div>
-            <div class="reviews-swiper__button-prev"></div>
-            <div class="reviews-swiper__button-next"></div>
+            <button class="swiper-button-prev reviews__swiper-button reviews__swiper-button--prev" type="button">
+              <svg width="16" height="32">
+                <use xlink:href="img/sprite.svg#next-slide"></use>
+              </svg>
+            </button>
+            <button class="swiper-button-next reviews__swiper-button reviews__swiper-button--next" type="button">
+              <svg width="16" height="32">
+                <use xlink:href="img/sprite.svg#next-slide"></use>
+              </svg>
+            </button>
           </div>
         </section>
         <div class="section-wrapper main-section main-section--flex main-section--contacts">
