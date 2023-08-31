@@ -37,8 +37,7 @@
               <li>Кардио-зона</li>
             </ul>
             <h1>Фитнес центр</h1>
-            <!-- Добавить название якоря для ссылки -->
-            <a href="#" class="btn btn--transparent btn--dark-bg">
+            <a href="#tickets" class="btn btn--transparent btn--dark-bg">
               <span>Купить абонемент</span>
             </a>
           </div>
@@ -72,9 +71,9 @@
             <div class="container container--no-mobile main-section__gim-img">
               <picture>
                 <source media="(max-width: 767px)" srcset="img/mobile/gim.webp, img/mobile/gim@2.webp 2x" type="image/webp">
-                <source media="(min-width: 767px)" srcset="img/mobile/gim.jpg, img/mobile/gim@2.jpg 2x">
-                <source media="(min-width: 1199px)" srcset="img/tablet/gim.webp, img/tablet/gim@2.webp 2x" type="image/webp">
-                <source media="(min-width: 1199px)" srcset="img/tablet/gim.jpg, img/tablet/gim@2.jpg 2x">
+                <source media="(max-width: 767px)" srcset="img/mobile/gim.jpg, img/mobile/gim@2.jpg 2x">
+                <source media="(max-width: 1199px)" srcset="img/tablet/gim.webp, img/tablet/gim@2.webp 2x" type="image/webp">
+                <source media="(max-width: 1199px)" srcset="img/tablet/gim.jpg, img/tablet/gim@2.jpg 2x">
                 <source srcset="img/desctop/gim.webp, img/desctop/gim@2.webp 2x" type="image/webp">
                 <img src="img/desctop/gim.jpg" width="661" height="402" alt="Наш спортивный зал с тренажерами.">
               </picture>
@@ -83,10 +82,10 @@
               <div class="main-section__gim-video-conatainer">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/video.webp, img/mobile/video@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/tablet/video.webp, img/tablet/video@2x.webp 2x">
-                  <source type="image/webp" srcset="img/desctop/video.webp, img/desctop/video@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/mobile/video.jpg, img/mobile/video@2x.jpg 2x">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/tablet/video.webp, img/tablet/video@2x.webp 2x">
                   <source media="(max-width: 1199px)" srcset="img/tablet/video.jpg, img/tablet/video@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/desctop/video.webp, img/desctop/video@2x.webp 2x">
                   <img src="img/desctop/video.jpg" srcset="img/desctop/video@2x.jpg 2x" width="364" height="228" alt="Видео">
                 </picture>
                 <div class="main-section__play">
@@ -101,7 +100,7 @@
             </div>
           </div>
         </section>
-        <section class="section-wrapper section-wrapper--gray" data-bgdesctop="img/desctop/pancakes.png" data-bgtablet="img/tablet/pancakes.png">
+        <section class="section-wrapper section-wrapper--gray" id="tickets" data-bgdesctop="img/desctop/pancakes.png" data-bgtablet="img/tablet/pancakes.png">
           <div class="container main-section main-section--vertical">
             <h2>Абонементы</h2>
             <div class="tabs">
@@ -238,7 +237,7 @@
             </div>
           </div>
         </section>
-        <section class="section-wrapper">
+        <section class="section-wrapper" id="schedule">
           <div class="container main-section main-section--flex super-game">
             <div class="super-game__content-wrapper">
               <h2>Super games</h2>
@@ -265,17 +264,17 @@
             </div>
             <div class="super-game__preview">
               <picture>
-                <source type="image/webp" media="(max-width: 1199px)" srcset="img/tablet/super-game.webp, img/tablet/super-game@2x.webp 2x">
                 <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/super-game.webp, img/mobile/super-game@2x.webp 2x">
-                <source type="image/webp" srcset="img/desctop/super-game.webp, img/desctop/super-game@2x.webp 2x">
-                <source media="(max-width: 1199px)" srcset="img/tablet/super-game.jpg, img/tablet/super-game@2x.jpg 2x">
                 <source media="(max-width: 767px)" srcset="img/mobile/super-game.jpg, img/mobile/super-game@2x.jpg 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/tablet/super-game.webp, img/tablet/super-game@2x.webp 2x">
+                <source media="(max-width: 1199px)" srcset="img/tablet/super-game.jpg, img/tablet/super-game@2x.jpg 2x">
+                <source type="image/webp" srcset="img/desctop/super-game.webp, img/desctop/super-game@2x.webp 2x">
                 <img src="img/desctop/super-game.jpg" srcset="img/desctop/super-game@2x.jpg 2x" width="680" height="500" alt="Превью супер игры.">
               </picture>
            </div>
           </div>
         </section>
-        <section class="section-wrapper">
+        <section class="section-wrapper" id="couch">
           <div class="container main-section main-section--coach-swiper coach-swiper">
             <h2>Тренеры</h2>
             <div class="coach-swiper__container swiper">
@@ -510,7 +509,7 @@
             </ul>
           </div>
         </section>
-        <section class="section-wrapper main-section main-section--vertical main-section--event">
+        <section class="section-wrapper main-section main-section--vertical main-section--event" id="events">
           <h2>Акции</h2>
           <div class="container event">
             <div class="event__img-block">
@@ -523,11 +522,11 @@
                 <a href="##">Подробнее</a>
               </div>
               <picture>
-                <source type="image/webp" media="(max-width: 1199px)" srcset="img/tablet/slim-figure.webp, img/tablet/slim-figure@2x.webp 2x">
                 <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile/slim-figure.webp, img/mobile/slim-figure@2x.webp 2x">
-                <source type="image/webp" srcset="img/desctop/slim-figure.webp, img/desctop/slim-figure@2x.webp 2x">
-                <source media="(max-width: 1199px)" srcset="img/tablet/slim-figure.jpg, img/tablet/slim-figure@2x.jpg 2x">
                 <source media="(max-width: 767px)" srcset="img/mobile/slim-figure.jpg, img/mobile/slim-figure@2x.jpg 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/tablet/slim-figure.webp, img/tablet/slim-figure@2x.webp 2x">
+                <source media="(max-width: 1199px)" srcset="img/tablet/slim-figure.jpg, img/tablet/slim-figure@2x.jpg 2x">
+                <source type="image/webp" srcset="img/desctop/slim-figure.webp, img/desctop/slim-figure@2x.webp 2x">
                 <img src="img/desctop/slim-figure.jpg" srcset="img/desctop/slim-figure@2x.jpg 2x" width="280" height="462" alt="Так можно выглядеть через год занятий в нашем центре">
               </picture>
             </div>
@@ -744,10 +743,10 @@
           </a>
           <nav class="main-footer__nav">
             <a href="#"><span>Услуги</span></a>
-            <a href="#"><span>Абонементы</span></a>
-            <a href="#"><span>Акции</span></a>
-            <a href="#"><span>Тренеры</span></a>
-            <a href="#"><span>Расписание</span></a>
+            <a href="#tickets"><span>Абонементы</span></a>
+            <a href="#events"><span>Акции</span></a>
+            <a href="#couch"><span>Тренеры</span></a>
+            <a href="#schedule"><span>Расписание</span></a>
           </nav>
           <ul class="main-footer__social-list">
             <li class="main-footer__social-item">
