@@ -103,14 +103,14 @@
         <section class="section-wrapper section-wrapper--gray" id="tickets" data-bgdesctop="img/desctop/pancakes.png" data-bgtablet="img/tablet/pancakes.png">
           <div class="container main-section main-section--vertical">
             <h2>Абонементы</h2>
-            <div class="tabs">
-              <div class="tabs__trigger-wrapper" data-block="tab-triggers">
-                <a class="tabs__trigger-item tabs__trigger-item--active" href="#tab1"><span>1 месяц</span></a>
-                <a class="tabs__trigger-item" href="#tab2"><span>6 месяцев</span></a>
-                <a class="tabs__trigger-item" href="#tab3"><span>12 месяцев</span></a>
+            <div class="tabs" data-tabs="parent">
+              <div class="tabs__trigger-wrapper" data-tabs="controls">
+                <a class="tabs__trigger-item is-active" href="#tab1" data-tabs="control"><span>1 месяц</span></a>
+                <a class="tabs__trigger-item" href="#tab2" data-tabs="control"><span>6 месяцев</span></a>
+                <a class="tabs__trigger-item" href="#tab3" data-tabs="control"><span>12 месяцев</span></a>
               </div>
-              <div class="tabs__content-wrapper">
-                <div class="tabs__content-item tabs__content-item--active" id="tab1">
+              <div class="tabs__content-wrapper" data-tabs="content">
+                <div class="tabs__content-item is-active" id="tab1" data-tabs="element">
                   <div class="tabs__card">
                     <h3>С тренером</h3>
                     <p>12 занятий</p>
@@ -151,7 +151,7 @@
                     <a>Купить абонемент</a>
                   </div>
                 </div>
-                <div class="tabs__content-item" id="tab2">
+                <div class="tabs__content-item" id="tab2" data-tabs="element">
                   <div class="tabs__card">
                     <h3>С тренером</h3>
                     <p>72 занятия</p>
@@ -192,7 +192,7 @@
                     <a>Купить абонемент</a>
                   </div>
                 </div>
-                <div class="tabs__content-item" id="tab3">
+                <div class="tabs__content-item" id="tab3" data-tabs="element">
                   <div class="tabs__card">
                     <h3>С тренером</h3>
                     <p>144 занятия</p>
