@@ -2,16 +2,13 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {sliderCoachInit, sliderReviewsInit} from './modules/sliders';
-import {initTabs, tabs} from './utils/tabs/init-tabs';
-import {accordions, initAccordions} from './utils/acordion/init-accordion';
-import { initImgBg } from './modules/init-bg-image';
+import {initTabs} from './utils/tabs/init-tabs';
+import {initAccordions} from './utils/acordion/init-accordion';
+import {initImgBg} from './modules/init-bg-image';
 
 
 const button = document.querySelector('.main-section__gim-video-conatainer');
 const video = document.getElementById('video');
-
-const getElementDataAttr = (value) => document.querySelector('div[data-block="' + value + '"]');
-// const tabs = getElementDataAttr('tab-triggers');
 
 // ---------------------------------
 
@@ -50,29 +47,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
   initTabs();
 
-  // tabs.addEventListener('click', (evt) => {
-  //   evt.preventDefault();
-  //   let link = evt.target;
-  //   while (link.dataset.block !== 'tab-triggers') {
-  //     if (link.tagName.toLowerCase() === 'a') {
-  //       let id = link.getAttribute('href');
-  //       id = String(id).replace('#', '');
-  //       const content = document.getElementById(id);
-  //       tabs.querySelector('.tabs__trigger-item--active').classList.remove('tabs__trigger-item--active');
-  //       document.querySelector('.tabs__content-item--active').classList.remove('tabs__content-item--active');
-  //       link.classList.add('tabs__trigger-item--active');
-  //       content.classList.add('tabs__content-item--active');
-  //       return;
-  //     } else {
-  //       link = link.parentElement;
-  //     }
-  //   }
-  // });
+  // Слайдеры
 
   sliderCoachInit();
   sliderReviewsInit();
 
+  // Аккордеон
+
   initAccordions();
+
+  // Форма
 
   const form = new Form();
   form.init();

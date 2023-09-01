@@ -1,8 +1,8 @@
 export const sliderCoachInit = () => {
   const swiper = new Swiper('.coach-swiper__container', {
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+      nextEl: '.coach__swiper-button--next',
+      prevEl: '.coach__swiper-button--prev',
     },
 
     direction: 'horizontal',
@@ -28,8 +28,8 @@ export const sliderCoachInit = () => {
 export const sliderReviewsInit = () => {
   const swiper = new Swiper('.reviews-swiper__container', {
     navigation: {
-      nextEl: '.reviews-swiper__button-next',
-      prevEl: '.reviews-swiper__button-prev',
+      nextEl: '.reviews__swiper-button--next',
+      prevEl: '.reviews__swiper-button--prev',
     },
 
     watchSlidesProgress: true,

@@ -10,7 +10,7 @@
   }
 
   @include vp-767 {
-    margin-top: -41px;
+    margin-top: -73px;
     padding-top: 50px;
   }
 }
@@ -87,9 +87,10 @@
     grid-template-rows: repeat(3, 1fr);
     margin: 0;
     margin-top: -53px;
-    gap: 76px;
+    gap: 10.34%;
     row-gap: 18px;
     justify-content: start;
+    width: 100%;
 
     &::before {
       content: "";

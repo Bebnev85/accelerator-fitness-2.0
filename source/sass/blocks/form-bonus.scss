@@ -1,7 +1,7 @@
 .form-bonus {
   width: 50%;
   background-color: $bg-sapphire;
-  padding: 64px 67px 68px 0;
+  padding: 86px 149px 68px 0;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -9,7 +9,7 @@
   @include vp-1199 {
     width: 100%;
     padding-top: 75px;
-    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 69px;
   }
 
@@ -26,8 +26,8 @@
 
   @include vp-1199 {
     max-width: 100%;
-    width: 475px;
-    margin-left: 6px;
+    width: 64.36%;
+    margin: 0 auto;
   }
 
   @include vp-767 {
@@ -40,7 +40,7 @@
 .form-bonus h2 {
   color: $color-default-white;
   letter-spacing: 1.9px;
-  margin-bottom: 27px;
+  margin-bottom: 47px;
 
   @include vp-1199 {
     margin-bottom: 44px;
