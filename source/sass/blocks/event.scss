@@ -34,7 +34,6 @@
 }
 
 .event__img-block img {
-
   @include vp-1199 {
     width: 100%;
     height: 100%;
@@ -161,7 +160,6 @@
   @include vp-767 {
     flex-direction: column;
     align-items: stretch;
-
   }
 }
 
@@ -173,7 +171,7 @@
   flex-direction: column;
   align-items: flex-start;
   border: 7px solid transparent;
-  border-image: linear-gradient(162deg, #D10A42, #00359F);
+  border-image: linear-gradient(162deg, #d10a42, #00359f);
   border-image-slice: 1;
   box-sizing: border-box;
   width: 560px;
@@ -218,6 +216,3 @@
     text-align: center;
   }
 }
-
-
-

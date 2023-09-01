@@ -104,7 +104,6 @@
   &:disabled {
     opacity: 0.5;
   }
-
 }
 
 .form-bonus input {
@@ -128,7 +127,7 @@
   &[aria-invalid="true"] {
     border-color: $form-color-torch-red;
 
-    &+.is-invalid {
+    & + .is-invalid {
       color: $form-color-torch-red;
       font-size: 14px;
       font-weight: 400;
@@ -157,5 +156,5 @@
 
 .form-bonus__input-wrapper {
   flex-grow: 1;
-  width: 190px
+  width: 190px;
 }

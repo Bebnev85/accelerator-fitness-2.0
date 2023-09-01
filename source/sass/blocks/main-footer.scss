@@ -116,6 +116,7 @@
   @include hover {
     & span {
       position: relative;
+
       &::before {
         content: "";
         display: block;

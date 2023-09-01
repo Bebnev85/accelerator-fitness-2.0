@@ -95,12 +95,30 @@
   letter-spacing: 4.8px;
   text-transform: uppercase;
   text-shadow:
-    -0 -2px 0 $color-default-white, 0 -2px 0 $color-default-white, -0 2px 0 $color-default-white, 0 2px 0 $color-default-white,
-    -2px -0 0 $color-default-white, 2px -0 0 $color-default-white, -2px 0 0 $color-default-white, 2px 0 0 $color-default-white,
-    -1px -2px 0 $color-default-white, 1px -2px 0 $color-default-white, -1px  2px 0 $color-default-white, 1px  2px 0 $color-default-white,
-    -2px -1px 0 $color-default-white, 2px -1px 0 $color-default-white, -2px 1px 0 $color-default-white, 2px 1px 0 $color-default-white,
-    -2px -2px 0 $color-default-white, 2px -2px 0 $color-default-white, -2px 2px 0 $color-default-white, 2px 2px 0 $color-default-white,
-    -2px -2px 0 $color-default-white, 2px -2px 0 $color-default-white, -2px 2px 0 $color-default-white, 2px 2px 0 $color-default-white;
+    -0 -2px 0 $color-default-white,
+    0 -2px 0 $color-default-white,
+    -0 2px 0 $color-default-white,
+    0 2px 0 $color-default-white,
+    -2px -0 0 $color-default-white,
+    2px -0 0 $color-default-white,
+    -2px 0 0 $color-default-white,
+    2px 0 0 $color-default-white,
+    -1px -2px 0 $color-default-white,
+    1px -2px 0 $color-default-white,
+    -1px  2px 0 $color-default-white,
+    1px  2px 0 $color-default-white,
+    -2px -1px 0 $color-default-white,
+    2px -1px 0 $color-default-white,
+    -2px 1px 0 $color-default-white,
+    2px 1px 0 $color-default-white,
+    -2px -2px 0 $color-default-white,
+    2px -2px 0 $color-default-white,
+    -2px 2px 0 $color-default-white,
+    2px 2px 0 $color-default-white,
+    -2px -2px 0 $color-default-white,
+    2px -2px 0 $color-default-white,
+    -2px 2px 0 $color-default-white,
+    2px 2px 0 $color-default-white;
 
   @include vp-1199 {
     font-size: 72px;

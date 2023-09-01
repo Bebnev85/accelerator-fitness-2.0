@@ -60,7 +60,7 @@
   }
 
   &--contacts {
-    padding-top: 0px;
+    padding-top: 0;
 
     @include vp-1199 {
       flex-direction: column;
@@ -359,7 +359,7 @@
     }
   }
 
-  &:disabled  {
+  &:disabled {
     color: $color-sapphire;
     background: $bg-default-white;
     opacity: 0.4;
