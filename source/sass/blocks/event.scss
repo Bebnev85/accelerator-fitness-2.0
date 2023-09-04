@@ -112,6 +112,16 @@
   line-height: normal;
   letter-spacing: 0.6px;
 
+  @include vp-1199 {
+    &:active {
+      outline: none;
+      padding: 9px;
+      border: 1px solid $color-default-white;
+      margin-left: -10px;
+      margin-bottom: -10px;
+    }
+  }
+
   @include hover {
     opacity: 0.7;
   }
@@ -135,6 +145,12 @@
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.7px;
+
+  @include vp-1199 {
+    &:active {
+      opacity: 0.8;
+    }
+  }
 
   @include hover {
     opacity: 0.8;

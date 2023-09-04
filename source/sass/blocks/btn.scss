@@ -32,4 +32,10 @@
   @include hover-focus {
     opacity: 0.8;
   }
+
+  @include vp-1199 {
+    &:active {
+      opacity: 0.8;
+    }
+  }
 }

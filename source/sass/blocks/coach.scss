@@ -6,6 +6,17 @@
 
   @include vp-1199 {
     width: 268px;
+
+    &:active {
+      & .coach__info {
+        display: block;
+        padding-top: 50px;
+      }
+
+      & .coach__name {
+        display: none;
+      }
+    }
   }
 
   @include vp-767 {
@@ -98,6 +109,14 @@
   @include vp-767 {
     padding-left: 50px;
     margin-top: 36px;
+  }
+}
+
+.coach-swiper__container {
+  width: 1190px;
+
+  @include vp-1199 {
+    width: 100%;
   }
 }
 

@@ -44,8 +44,24 @@
   font-weight: 400;
   line-height: 150%;
 
+  @include hover-focus {
+    border-bottom: 2px solid rgba($color: #d10a42, $alpha: 0.8);
+
+    & span {
+      opacity: 1;
+    }
+  }
+
   @include vp-1199 {
     letter-spacing: -0.99px;
+
+    &:active {
+      border-bottom: 2px solid rgba($color: #d10a42, $alpha: 0.8);
+
+      & span {
+        opacity: 1;
+      }
+    }
   }
 
   @include vp-767 {
@@ -53,14 +69,6 @@
     padding-top: 15px;
     letter-spacing: 0.1px;
     padding-bottom: 12px;
-  }
-
-  @include hover-focus {
-    border-bottom: 2px solid rgba($color: #d10a42, $alpha: 0.8);
-
-    & span {
-      opacity: 1;
-    }
   }
 
   &.is-active {
@@ -109,6 +117,30 @@
 
   @include vp-1199 {
     width: 445px;
+
+    &:active {
+      padding-top: 55px;
+      padding-bottom: 61px;
+      border: 7px solid transparent;
+      border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+      border-image-slice: 1;
+
+      @include vp-767 {
+        padding-top: 45px;
+        padding-bottom: 47px;
+      }
+
+      & a {
+        padding: 29px 46px 22px 42px;
+        border: none;
+        background-image: $btn-gradient;
+        color: $color-default-white;
+
+        @include vp-767 {
+          padding: 27px 45px 25px 46px;
+        }
+      }
+    }
   }
 
   @include vp-767 {
@@ -238,7 +270,7 @@
     color: $color-default-white;
   }
 
-  @include active {
+  &:active {
     padding: 29px 46px 30px 47px;
     border: none;
     background-image: $btn-gradient;

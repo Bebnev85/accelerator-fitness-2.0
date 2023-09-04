@@ -148,15 +148,21 @@
     }
   }
 
-  &:hover,
-  &:focus {
+  @include hover-focus {
     border-color: $color-default-black;
     outline: none;
   }
 
-  &:active {
+  @include active {
     color: $color-default-white;
     background-color: $color-default-black;
+  }
+
+  @include vp-1199 {
+    &:active {
+      color: $color-default-white;
+      background-color: $color-default-black;
+    }
   }
 
   &:disabled {

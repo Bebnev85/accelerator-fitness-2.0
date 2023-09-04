@@ -5,10 +5,8 @@ import {sliderCoachInit, sliderReviewsInit} from './modules/sliders';
 import {initTabs} from './utils/tabs/init-tabs';
 import {initAccordions} from './utils/acordion/init-accordion';
 import {initImgBg} from './modules/init-bg-image';
+import {initVideo} from './modules/load_video';
 
-
-const button = document.querySelector('.main-section__gim-video-conatainer');
-const video = document.getElementById('video');
 
 // ---------------------------------
 
@@ -26,35 +24,28 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
 
   // Инициализация фонового изображения
-  initImgBg();
 
   window.addEventListener('load', () => {
+    initImgBg();
+    initTabs();
     initModals();
-    const form = new Form();
-    window.form = form;
-    form.init();
+    initVideo();
+    sliderCoachInit();
+    sliderReviewsInit();
+    initAccordions();
   });
 
   // Видео
 
-  button.addEventListener('click', () => {
-    const src = video.dataset.src;
-    video.style.height = '100%';
-    video.insertAdjacentHTML('afterbegin', '<iframe src="' + src + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
-  });
 
   // Табы
 
-  initTabs();
 
   // Слайдеры
 
-  sliderCoachInit();
-  sliderReviewsInit();
 
   // Аккордеон
 
-  initAccordions();
 
   // Форма
 

@@ -33,7 +33,6 @@
 .main-footer__logo {
   color: $color-default-white;
 
-
   @include hover {
     opacity: 0.8;
   }
@@ -51,6 +50,13 @@
 
   &:disabled {
     opacity: 0.3;
+  }
+
+  @include vp-1199 {
+    &:active {
+      border: none;
+      padding: 0 10px;
+    }
   }
 }
 
@@ -144,6 +150,17 @@
     }
   }
 
+  @include vp-1199 {
+    &:active {
+      border: none;
+      outline: none;
+
+      & span::before {
+        display: none;
+      }
+    }
+  }
+
   &:disabled {
     opacity: 0.4;
   }
@@ -188,5 +205,12 @@
 
   &:disabled {
     opacity: 0.3;
+  }
+
+  @include vp-1199 {
+    &:active {
+      color: $color-default-white;
+      background-color: $bg-sapphire;
+    }
   }
 }
