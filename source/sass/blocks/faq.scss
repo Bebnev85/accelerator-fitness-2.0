@@ -265,7 +265,7 @@
   }
 }
 
-.faq__accordion-wrapper .is-active button {
+.faq__item.is-active button {
   background-color: #1c3374;
 
   &::after {
@@ -277,7 +277,7 @@
   }
 }
 
-.faq [data-accordion="element"].is-active > [data-accordion="content"] {
+.faq__item.is-active > [data-accordion="content"] {
   margin-top: -23px;
   margin-bottom: 23px;
   width: 660px;

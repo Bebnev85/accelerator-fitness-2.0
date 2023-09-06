@@ -1,8 +1,10 @@
+import Swiper from '../vendor/swiper';
+
 export const sliderCoachInit = () => {
-  const swiper = new Swiper('.coach-swiper__container', {
+  const SWIPER = new Swiper('.coach-swiper__container', {
     navigation: {
-      nextEl: '.coach__swiper-button--next',
-      prevEl: '.coach__swiper-button--prev',
+      nextEl: '.coach-swiper__button--next',
+      prevEl: '.coach-swiper__button--prev',
     },
 
     direction: 'horizontal',
@@ -23,13 +25,14 @@ export const sliderCoachInit = () => {
       },
     },
   });
+  return SWIPER;
 };
 
 export const sliderReviewsInit = () => {
-  const swiper = new Swiper('.reviews-swiper__container', {
+  const SWIPER = new Swiper('.reviews-swiper__container', {
     navigation: {
-      nextEl: '.reviews__swiper-button--next',
-      prevEl: '.reviews__swiper-button--prev',
+      nextEl: '.reviews-swiper__button--next',
+      prevEl: '.reviews-swiper__button--prev',
     },
 
     watchSlidesProgress: true,
@@ -37,4 +40,5 @@ export const sliderReviewsInit = () => {
     autoHeight: true,
     slidesPerView: 1,
   });
+  return SWIPER;
 };

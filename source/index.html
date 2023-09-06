@@ -11,6 +11,8 @@
     <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
     <link rel="manifest" href="favicon/manifest.json">
     <link rel="preload" href="fonts/alumnisans-semibold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/alumnisans-bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/alumnisans-extrabold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/robotocondensed-light.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/robotocondensed-regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font" crossorigin="anonymous">
@@ -441,12 +443,12 @@
                 </div>
               </div>
             </div>
-            <button class="swiper-button-prev coach__swiper-button coach__swiper-button--prev" type="button">
+            <button class="swiper-button-prev coach-swiper__button coach-swiper__button--prev" type="button">
               <svg width="16" height="32">
                 <use xlink:href="img/sprite.svg#next-slide"></use>
               </svg>
             </button>
-            <button class="swiper-button-next coach__swiper-button coach__swiper-button--next" type="button">
+            <button class="swiper-button-next coach-swiper__button coach-swiper__button--next" type="button">
               <svg width="16" height="32">
                 <use xlink:href="img/sprite.svg#next-slide"></use>
               </svg>
@@ -530,7 +532,7 @@
                 <img src="img/desctop/slim-figure.jpg" srcset="img/desctop/slim-figure@2x.jpg 2x" width="280" height="462" alt="Так можно выглядеть через год занятий в нашем центре">
               </picture>
             </div>
-            <ul>
+            <ul class="event__list">
               <li>
                 <h3>Месяц бесплатно</h3>
                 <p>Приведи друга, получи абонемент в подарок</p>
@@ -556,22 +558,22 @@
             <ul class="faq__tabs-wrapper faq__tabs-wrapper--content" data-tabs="content">
               <li class="faq__tabs-element" data-tabs="element" >
                 <ul class="faq__accordion-wrapper" data-accordion="parent">
-                  <li data-accordion="element">
+                  <li class="faq__item" data-accordion="element">
                     <p>Как стать членом фитнес-центра?</p>
                     <button data-accordion="button">Показать/скрыть</button>
                     <p data-accordion="content">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
                   </li>
-                  <li data-accordion="element">
+                  <li class="faq__item" data-accordion="element">
                     <p>Где можно посмотреть расписание?</p>
                     <button data-accordion="button">Показать/скрыть</button>
                     <p data-accordion="content">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
                   </li>
-                  <li data-accordion="element">
+                  <li class="faq__item" data-accordion="element">
                     <p>Есть кулеры в центре? Предоставляются полотенца?</p>
                     <button data-accordion="button">Показать/скрыть</button>
                     <p data-accordion="content">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
                   </li>
-                  <li data-accordion="element">
+                  <li class="faq__item" data-accordion="element">
                     <p>Сколько тренеров работает в клубе и какова их&nbsp;квалификация?</p>
                     <button data-accordion="button">Показать/скрыть</button>
                     <p data-accordion="content">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
@@ -580,22 +582,22 @@
               </li>
               <li class="faq__tabs-element for-load" data-tabs="element">
                 <ul class="faq__accordion-wrapper" data-accordion="parent">
-                  <li class="is-active" data-accordion="element">
+                  <li class="faq__item is-active" data-accordion="element">
                     <p>Занятия с тренером входят в абонемент?</p>
                     <button data-accordion="button">Показать/скрыть</button>
                     <p data-accordion="content">При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
                   </li>
-                  <li data-accordion="element">
+                  <li class="faq__item" data-accordion="element">
                     <p>Можно ли заморозить абонемент?</p>
                     <button data-accordion="button">Показать/скрыть</button>
                     <p data-accordion="content">При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
                   </li>
-                  <li data-accordion="element">
+                  <li class="faq__item" data-accordion="element">
                     <p>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</p>
                     <button data-accordion="button">Показать/скрыть</button>
                     <p data-accordion="content">При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
                   </li>
-                  <li data-accordion="element">
+                  <li class="faq__item" data-accordion="element">
                     <p>Что такое семейный доступ и доступ для друзей?</p>
                     <button data-accordion="button">Показать/скрыть</button>
                     <p data-accordion="content">При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
@@ -604,22 +606,22 @@
               </li>
               <li class="faq__tabs-element" data-tabs="element">
                 <ul class="faq__accordion-wrapper" data-accordion="parent">
-                  <li data-accordion="element">
+                  <li class="faq__item" data-accordion="element">
                     <p>Предлагает ли клуб услуги по&nbsp;консультированию по&nbsp;вопросам питания?</p>
                     <button data-accordion="button">Показать/скрыть</button>
                     <p data-accordion="content">Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.</p>
                   </li>
-                  <li data-accordion="element">
+                  <li class="faq__item" data-accordion="element">
                     <p>Проводятся ли в клубе<br>какие-либо мероприятия или&nbsp;соревнования?</p>
                     <button data-accordion="button">Показать/скрыть</button>
                     <p data-accordion="content">Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.</p>
                   </li>
-                  <li data-accordion="element">
+                  <li class="faq__item" data-accordion="element">
                     <p>Можно ли приобрести в центре спортивное питание?</p>
                     <button data-accordion="button">Показать/скрыть</button>
                     <p data-accordion="content">Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.</p>
                   </li>
-                  <li data-accordion="element">
+                  <li class="faq__item" data-accordion="element">
                     <p>Есть ли в центре детская комната?</p>
                     <button data-accordion="button">Показать/скрыть</button>
                     <p data-accordion="content">Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.</p>
@@ -628,22 +630,22 @@
               </li>
               <li class="faq__tabs-element" data-tabs="element">
                 <ul class="faq__accordion-wrapper" data-accordion="parent">
-                  <li data-accordion="element">
+                  <li class="faq__item" data-accordion="element">
                     <p>Есть в фитнес-центре дресс-код?</p>
                     <button data-accordion="button">Показать/скрыть</button>
                     <p data-accordion="content">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
                   </li>
-                  <li data-accordion="element">
+                  <li class="faq__item" data-accordion="element">
                     <p>Можно ли приводить с собой детей на тренировки?</p>
                     <button data-accordion="button">Показать/скрыть</button>
                     <p data-accordion="content">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
                   </li>
-                  <li data-accordion="element">
+                  <li class="faq__item" data-accordion="element">
                     <p>Какие дополнительные правила посещения центра?</p>
                     <button data-accordion="button">Показать/скрыть</button>
                     <p data-accordion="content">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
                   </li>
-                  <li data-accordion="element">
+                  <li class="faq__item" data-accordion="element">
                     <p>Нужна ли медицинская справка для посещения залов и бассейна?</p>
                     <button data-accordion="button">Показать/скрыть</button>
                     <p data-accordion="content">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
@@ -680,12 +682,12 @@
                 </div>
               </div>
             </div>
-            <button class="swiper-button-prev reviews__swiper-button reviews__swiper-button--prev" type="button">
+            <button class="swiper-button-prev reviews-swiper__button reviews-swiper__button--prev" type="button">
               <svg width="16" height="32">
                 <use xlink:href="img/sprite.svg#next-slide"></use>
               </svg>
             </button>
-            <button class="swiper-button-next reviews__swiper-button reviews__swiper-button--next" type="button">
+            <button class="swiper-button-next reviews-swiper__button reviews-swiper__button--next" type="button">
               <svg width="16" height="32">
                 <use xlink:href="img/sprite.svg#next-slide"></use>
               </svg>
