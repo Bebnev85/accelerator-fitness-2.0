@@ -32,6 +32,7 @@
 
 .main-footer__logo {
   color: $color-default-white;
+  margin-top: 2px;
 
   @include hover {
     opacity: 0.8;
@@ -169,7 +170,7 @@
 .main-footer__social-list {
   display: flex;
   list-style-type: none;
-  gap: 11px;
+  gap: 12px;
   margin: 0;
 
   @include vp-1199 {

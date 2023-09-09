@@ -2,7 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  margin-bottom: 120px;
+  row-gap: 38px;
+  margin-bottom: 119px;
 
   @include vp-1199 {
     flex-direction: column;
@@ -42,7 +43,7 @@
 .faq__tabs-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 
   @include vp-1199 {
     flex-direction: row;
@@ -69,7 +70,7 @@
   min-width: 260px;
   display: flex;
   justify-content: center;
-  padding: 18px 10px;
+  padding: 17px 10px;
   background-color: $color-transparent;
   color: $color-sapphire;
   font-size: 18px;
@@ -97,7 +98,7 @@
   &.is-active {
     color: $color-default-white;
     background: $btn-gradient;
-    padding: 19px 11px;
+    padding: 18px 11px;
     border: none;
 
     @include vp-1199 {
@@ -127,11 +128,15 @@
   }
 }
 
+.faq__tabs-element {
+  width: 100%;
+}
+
 .faq__accordion-wrapper {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  border-top: 1px solid #1c3374;
+  border-top: 2px solid rgba(28, 51, 116, 0.20);
   padding-left: 0;
 
   @include vp-767 {
@@ -144,10 +149,10 @@
   grid-template-columns: 1fr 42px;
   grid-template-rows: auto;
   column-gap: 40px;
-  border-bottom: 1px solid #1c3374;
-  min-height: 92px;
+  border-bottom: 2px solid rgba(28, 51, 116, 0.20);
   align-items: center;
   width: 100%;
+  // padding: 25px 0;
 
   @include vp-767 {
     grid-template-columns: 1fr 32px;
@@ -176,6 +181,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  margin: 24px 0;
 
   @include vp-1199 {
     &:active {
@@ -241,7 +247,7 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 120%;
-  min-height: 90px;
+  // min-height: 96px;
   display: flex;
   align-items: center;
   letter-spacing: -0.1px;

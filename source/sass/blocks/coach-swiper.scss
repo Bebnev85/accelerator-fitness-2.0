@@ -8,7 +8,10 @@
   }
 }
 
+
 .coach-swiper__container {
+  width: 1160px;
+
   @include vp-1199 {
     width: 566px;
   }

@@ -1,9 +1,9 @@
 .form-bonus {
   width: 50%;
   background-color: $bg-sapphire;
-  padding: 86px 149px 68px 0;
+  padding: 86px 170px 68px 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   box-sizing: border-box;
 
   @include vp-1199 {

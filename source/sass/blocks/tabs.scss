@@ -173,6 +173,19 @@
       }
     }
   }
+
+  &:focus-within {
+    padding-top: 55px;
+    padding-bottom: 61px;
+    border: 7px solid transparent;
+    border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    border-image-slice: 1;
+
+    @include vp-767 {
+      padding-top: 45px;
+      padding-bottom: 47px;
+    }
+  }
 }
 
 .tabs__card h3 {
@@ -264,14 +277,14 @@
   }
 
   @include hover-focus {
-    padding: 27px 45px 25px 46px;
+    padding: 26px 43px 24px 45px;
     border: none;
     background-image: $btn-gradient;
     color: $color-default-white;
   }
 
   &:active {
-    padding: 29px 46px 30px 47px;
+    padding: 26px 43px 24px 45px;
     border: none;
     background-image: $btn-gradient;
     color: $color-default-white;

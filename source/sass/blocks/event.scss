@@ -1,7 +1,7 @@
 .event {
   display: flex;
   justify-content: center;
-  gap: 41px;
+  gap: 3.45%;
   align-items: stretch;
   flex-direction: row;
   margin-top: 54px;
@@ -21,6 +21,7 @@
   display: flex;
   background-color: $bg-torch-red;
   align-items: stretch;
+  flex-grow: 1;
 
   @include vp-1199 {
     justify-content: space-between;
@@ -31,6 +32,10 @@
     flex-direction: column;
     height: auto;
   }
+}
+
+.event__img-block picture {
+  flex-grow: 1;
 }
 
 .event__img-block img {
@@ -54,6 +59,7 @@
   align-items: flex-start;
   color: $color-default-white;
   width: 280px;
+  flex-grow: 1;
 
   @include vp-1199 {
     padding-right: 40px;
@@ -165,6 +171,7 @@
   align-items: stretch;
   margin: 0;
   padding: 0;
+  flex-grow: 1;
 
   @include vp-1199 {
     flex-direction: row;

@@ -3,7 +3,8 @@
   justify-content: end;
   align-items: flex-end;
   gap: 5.52%;
-  padding-bottom: 52px;
+  padding-bottom: 51px;
+  margin-top: 1px;
 
   @include vp-1199 {
     gap: 4.42%;

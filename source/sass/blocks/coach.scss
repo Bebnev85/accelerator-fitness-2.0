@@ -11,6 +11,7 @@
       & .coach__info {
         display: block;
         padding-top: 50px;
+        filter: progid:DXImageTransform.Microsoft.DropShadow(0, 4, color=rgba(#000000, .25), positive=false)
       }
 
       & .coach__name {
@@ -28,6 +29,19 @@
     & .coach__info {
       display: block;
       padding-top: 50px;
+    }
+
+    & .coach__name {
+      display: none;
+    }
+  }
+
+  &:active {
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25));
+
+    & .coach__info {
+      display: block;
+      padding-top: 52px;
     }
 
     & .coach__name {
@@ -56,8 +70,8 @@
   bottom: 0;
   right: 0;
   text-align: center;
-  margin-bottom: 25px;
-  letter-spacing: 1px;
+  margin-bottom: 24px;
+  letter-spacing: 0.9px;
 }
 
 .coach__info {
@@ -100,11 +114,11 @@
   font-weight: 400;
   line-height: 150%;
   margin-top: 34px;
-  padding-left: 69px;
+  padding-left: 73px;
   padding-right: 20px;
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 12px;
 
   @include vp-767 {
     padding-left: 50px;
@@ -112,10 +126,6 @@
   }
 }
 
-.coach-swiper__container {
-  width: 1190px;
-
-  @include vp-1199 {
-    width: 100%;
-  }
+.coach__info li::marker {
+  font-size: 18px;
 }
