@@ -24,6 +24,7 @@
   @include vp-1199 {
     margin-top: 13px;
     gap: 54px;
+    margin-bottom: 5px;
   }
 
   @include vp-767 {
@@ -102,39 +103,69 @@
   }
 }
 
+.tabs__card a {
+  color: $color-sapphire;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 25px 43px 23px 44px;
+  border: 2px solid $bg-sapphire;
+  cursor: pointer;
+  margin-bottom: -1px;
+
+  @include hover-focus {
+    padding: 26px 43px 24px 45px;
+    border: none;
+    background-image: $btn-gradient;
+    color: $color-default-white;
+    margin: 0;
+  }
+
+  &:active {
+    padding: 26px 43px 24px 45px;
+    border: none;
+    background-image: $btn-gradient;
+    color: $color-default-white;
+    margin: 0;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+}
+
 .tabs__card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 448px;
+  box-sizing: border-box;
+  overflow: auto;
   gap: 10px;
   background-color: $bg-default-white;
-  padding-top: 62px;
-  padding-bottom: 68px;
+  padding: 61px 0;
   min-width: 360px;
-  box-sizing: border-box;
   position: relative;
   z-index: 1;
+  border: 7px solid transparent;
 
   @include vp-1199 {
-    width: 445px;
+    width: 442px;
 
     &:active {
-      padding-top: 55px;
-      padding-bottom: 61px;
-      border: 7px solid transparent;
       border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
       border-image-slice: 1;
-
-      @include vp-767 {
-        padding-top: 45px;
-        padding-bottom: 47px;
-      }
 
       & a {
         padding: 29px 46px 22px 42px;
         border: none;
         background-image: $btn-gradient;
         color: $color-default-white;
+        margin: 0;
 
         @include vp-767 {
           padding: 27px 45px 25px 46px;
@@ -146,44 +177,34 @@
   @include vp-767 {
     min-width: 290px;
     width: 100%;
-    padding-top: 52px;
-    padding-bottom: 55px;
+    padding: 52px 0;
   }
 
-  @include hover-focus {
-    padding-top: 55px;
-    padding-bottom: 61px;
+  @include hover {
+    padding: 55px 0;
     border: 7px solid transparent;
     border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
     border-image-slice: 1;
-
-    @include vp-767 {
-      padding-top: 45px;
-      padding-bottom: 47px;
-    }
 
     & a {
       padding: 29px 46px 22px 42px;
       border: none;
       background-image: $btn-gradient;
       color: $color-default-white;
-
-      @include vp-767 {
-        padding: 27px 45px 25px 46px;
-      }
+      margin-top: 27px;
+      margin: 0;
     }
   }
 
   &:focus-within {
-    padding-top: 55px;
-    padding-bottom: 61px;
     border: 7px solid transparent;
     border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
     border-image-slice: 1;
 
-    @include vp-767 {
-      padding-top: 45px;
-      padding-bottom: 47px;
+    @include vp-1199 {
+      border: 7px solid transparent;
+      border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+      border-image-slice: 1;
     }
   }
 }
@@ -194,8 +215,9 @@
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 26px;
   font-weight: 700;
-  line-height: 110.16%;
+  line-height: 28.64px;
   margin: 0;
+  margin-top: -5px;
 
   @include vp-767 {
     font-size: 22px;
@@ -210,6 +232,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
+  margin: 0;
 }
 
 .tabs__price p {
@@ -255,49 +278,9 @@
   }
 }
 
-.tabs__card a {
-  color: $color-sapphire;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-  padding: 25px 43px 23px 44px;
-  border: 2px solid $bg-sapphire;
-  margin-top: 24px;
-  cursor: pointer;
-
-  @include vp-1199 {
-    margin-top: 25px;
-  }
-
-  @include vp-767 {
-    margin-top: 31px;
-  }
-
-  @include hover-focus {
-    padding: 26px 43px 24px 45px;
-    border: none;
-    background-image: $btn-gradient;
-    color: $color-default-white;
-  }
-
-  &:active {
-    padding: 26px 43px 24px 45px;
-    border: none;
-    background-image: $btn-gradient;
-    color: $color-default-white;
-  }
-
-  &:disabled {
-    opacity: 0.3;
-    cursor: default;
-  }
-}
-
 .tabs__price {
-  margin-top: 55px;
+  flex-grow: 1;
+  padding-top: 55px;
 }
 
 .tabs__content-wrapper {
@@ -307,6 +290,5 @@
   @include vp-1199 {
     display: flex;
     flex-direction: column;
-    padding-top: 5px;
   }
 }
