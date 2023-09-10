@@ -2538,7 +2538,7 @@ button,
 @media (max-width: 767px) {
   .main-footer {
     margin-top: -73px;
-    padding-top: 50px;
+    padding-top: 48px;
   }
 }
 
@@ -2725,6 +2725,8 @@ button,
 @media (max-width: 767px) {
   .main-footer__social-list {
     padding: 0;
+    margin-top: -1px;
+    gap: 11px;
   }
 }
 
@@ -2940,6 +2942,11 @@ button,
 @media (max-width: 1199px) {
   .main-section--reviews h2 {
     margin-bottom: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .main-section--reviews h2 {
+    margin-bottom: 20px;
   }
 }
 
@@ -3294,6 +3301,8 @@ button,
 @media (max-width: 767px) {
   .main-section__gim-text {
     width: 81.25vw;
+    text-align: left;
+    margin-top: 0;
   }
 }
 
@@ -3345,7 +3354,7 @@ button,
 @media (max-width: 767px) {
   .main-section__gim-img {
     margin: 0;
-    margin-top: 24px;
+    margin-top: 25px;
     width: 100%;
   }
 }
@@ -3395,7 +3404,10 @@ button,
 }
 @media (max-width: 767px) {
   .tabs__trigger-wrapper {
-    gap: 43px;
+    gap: 40px;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
   }
 }
 
@@ -3443,6 +3455,7 @@ button,
     padding-top: 15px;
     letter-spacing: 0.1px;
     padding-bottom: 12px;
+    padding-right: 2px;
   }
 }
 .tabs__trigger-item.is-active {
@@ -3575,7 +3588,9 @@ button,
   .tabs__card {
     min-width: 290px;
     width: 100%;
-    padding: 52px 0;
+    padding: 48px 0;
+    gap: 7px;
+    height: 385px;
   }
 }
 @media (hover: hover) {
@@ -3685,7 +3700,7 @@ button,
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding-top: 55px;
+  padding-top: 58px;
 }
 
 .tabs__content-wrapper {
@@ -3725,7 +3740,7 @@ button,
 }
 @media (max-width: 767px) {
   .super-game {
-    padding-top: 29px;
+    padding-top: 25px;
     padding-bottom: 72px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3775,6 +3790,7 @@ button,
     width: 100%;
     padding-right: 42px;
     padding-bottom: 50px;
+    row-gap: 2px;
   }
 }
 
@@ -3816,6 +3832,11 @@ button,
 @media (max-width: 1199px) {
   .super-game__shedule-wrapper {
     gap: 9px;
+  }
+}
+@media (max-width: 767px) {
+  .super-game__shedule-wrapper {
+    gap: 7px;
   }
 }
 
@@ -3865,6 +3886,12 @@ button,
     margin-top: -2px;
   }
 }
+@media (max-width: 767px) {
+  .super-game__shedule div {
+    margin-top: 0;
+    gap: 4px;
+  }
+}
 
 .super-game__shedule p {
   display: -webkit-box;
@@ -3907,7 +3934,7 @@ button,
 }
 @media (max-width: 767px) {
   .super-game__description {
-    margin-bottom: 5px;
+    margin-bottom: 1px;
   }
 }
 
@@ -4060,7 +4087,8 @@ button,
 }
 .coach:active .coach__info {
   display: block;
-  padding-top: 52px;
+  padding-top: 43px;
+  padding-left: 2px;
 }
 .coach:active .coach__name {
   display: none;
@@ -4122,6 +4150,7 @@ button,
   .coach__info h3 {
     font-size: 15px;
     letter-spacing: 1.5px;
+    padding-right: 0;
   }
 }
 
@@ -4545,6 +4574,13 @@ button,
   line-height: 24px;
 }
 
+@media (max-width: 767px) {
+  .advantages__content--mobile p {
+    margin-top: 8px;
+    margin-bottom: -6px;
+  }
+}
+
 .event {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4575,6 +4611,7 @@ button,
 @media (max-width: 767px) {
   .event {
     margin-top: 49px;
+    gap: 29px;
   }
 }
 
@@ -4922,7 +4959,7 @@ button,
 @media (max-width: 767px) {
   .faq h2 {
     font-size: 32px;
-    margin-top: 70px;
+    margin-top: 68px;
     letter-spacing: 0.96px;
   }
 }
@@ -4951,7 +4988,7 @@ button,
     display: grid;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    row-gap: 5px;
+    row-gap: 6px;
     width: 100%;
   }
 }
@@ -5091,7 +5128,6 @@ button,
 @media (max-width: 767px) {
   .faq__item {
     padding: 20px 0;
-    min-height: 0;
   }
 }
 .faq__item.is-active {
@@ -5114,6 +5150,11 @@ button,
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
+}
+@media (max-width: 767px) {
+  .faq__item div {
+    gap: 10px;
+  }
 }
 
 .faq__accordion-wrapper button {
@@ -5254,7 +5295,8 @@ button,
 @media (max-width: 767px) {
   .faq__item.is-active > [data-accordion=content] {
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: -2px;
+    margin-top: -22px;
   }
 }
 
@@ -5266,7 +5308,7 @@ button,
 }
 @media (max-width: 767px) {
   .reviews-swiper {
-    margin-top: 36px;
+    margin-top: 27px;
     width: 100%;
   }
 }
@@ -5398,13 +5440,12 @@ button,
             box-sizing: border-box;
     -ms-grid-columns: 47.19% 1fr;
     grid-template-columns: 47.19% 1fr;
-    width: 78.62%;
-    padding: 40px 25px;
+    width: 70.5%;
+    padding: 40px 25px 32px;
     -webkit-column-gap: 15px;
        -moz-column-gap: 15px;
             column-gap: 15px;
     row-gap: 20px;
-    padding-bottom: 32px;
   }
 }
 

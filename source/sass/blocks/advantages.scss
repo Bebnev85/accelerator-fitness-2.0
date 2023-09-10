@@ -243,3 +243,12 @@
 .advantages__item--center p {
   line-height: 24px;
 }
+
+.advantages__content {
+  &--mobile p {
+    @include vp-767 {
+      margin-top: 8px;
+      margin-bottom: -6px;
+    }
+  }
+}
