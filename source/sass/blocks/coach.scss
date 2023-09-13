@@ -11,7 +11,7 @@
       & .coach__info {
         display: block;
         padding-top: 50px;
-        filter: progid:DXImageTransform.Microsoft.DropShadow(0, 4, color=rgba(#000000, .25), positive=false)
+        filter: drop-shadow(0, 4, color=rgba(#000000, .25), positive=false)
       }
 
       & .coach__name {
@@ -43,6 +43,7 @@
       display: block;
       padding-top: 43px;
       padding-left: 2px;
+      transition-delay: 10s;
     }
 
     & .coach__name {

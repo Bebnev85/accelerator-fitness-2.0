@@ -75,16 +75,9 @@
     outline: none;
   }
 
-  @include active {
+  &:active {
     color: $color-default-white;
-    background-color: $color-default-black;
-  }
-
-  @include vp-1199 {
-    &:active {
-      color: $color-default-white;
-      background-color: $color-default-black;
-    }
+    background-color: $color-sapphire;
   }
 
   &:disabled {

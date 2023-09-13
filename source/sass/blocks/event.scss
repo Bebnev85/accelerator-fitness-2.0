@@ -35,10 +35,6 @@
   }
 }
 
-.event__img-block picture {
-  flex-grow: 1;
-}
-
 .event__img-block img {
   @include vp-1199 {
     width: 100%;
@@ -136,9 +132,10 @@
   @include focus {
     outline: none;
     padding: 9px;
-    border: 1px solid $color-default-white;
+    border: 1px solid $color-sapphire;
     margin-left: -10px;
-    margin-bottom: -10px;
+    margin-bottom: -9px;
+    margin-top: -10px;
   }
 
   &:disabled {
@@ -161,6 +158,10 @@
 
   @include hover {
     opacity: 0.8;
+  }
+
+  @include focus {
+    border-color: $color-default-white;
   }
 }
 

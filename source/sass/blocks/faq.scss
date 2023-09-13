@@ -83,6 +83,7 @@
   box-sizing: border-box;
   border: 1px solid rgba($color-sapphire, 0.2);
   cursor: pointer;
+  user-select: none;
 
   @include vp-1199 {
     min-width: 162px;
@@ -117,14 +118,30 @@
     }
 
     @include hover-focus {
-      border: none;
-      outline: none;
+      color: $color-sapphire;
+      background: $bg-default-white;
+      padding: 17px 10px;
+    }
+
+    @include vp-767 {
+      padding: 14px 10px;
     }
   }
 
   @include hover-focus {
     border: 1px solid $color-sapphire;
     outline: none;
+  }
+
+  &:active {
+    background: $btn-gradient;
+    color: $color-default-white;
+    border: none;
+    padding: 18px 11px;
+
+    @include vp-767 {
+      padding: 15px 11px;
+    }
   }
 
   &:disabled {
@@ -153,13 +170,7 @@
   flex-direction: column;
   align-items: stretch;
   padding: 24px 0 25px;
-  // grid-template-columns: 1fr 42px;
-  // grid-template-rows: auto;
-  // column-gap: 40px;
   border-bottom: 2px solid rgba(28, 51, 116, 0.20);
-  // align-items: center;
-  // width: 100%;
-  // padding: 25px 0;
 
   @include vp-767 {
     padding: 20px 0;
@@ -185,7 +196,7 @@
   }
 }
 
-.faq__accordion-wrapper button {
+.faq__item button {
   display: flex;
   border-radius: 50%;
   font-size: 0;
@@ -197,15 +208,13 @@
   justify-content: center;
   position: relative;
 
-  @include vp-1199 {
-    &:active {
-      background-color: $bg-sapphire;
-      outline: none;
+  &:active {
+    background: $bg-sapphire;
+    outline: none;
 
-      &::before,
-      &::after {
-        background-color: $color-default-white;
-      }
+    &::before,
+    &::after {
+      background-color: $color-default-white;
     }
   }
 
@@ -242,12 +251,12 @@
   }
 
   @include hover-focus {
-    background-color: $bg-sapphire;
+    background: $bg-sapphire;
     outline: none;
 
     &::before,
     &::after {
-      background-color: $color-default-white;
+      background: $color-default-white;
     }
   }
 

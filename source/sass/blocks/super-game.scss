@@ -181,6 +181,7 @@
   color: $color-default-white;
   margin-left: -12px;
   align-self: end;
+  user-select: none;
 
   @include vp-1199 {
     padding: 6.5px 45px;
@@ -200,13 +201,13 @@
   @include hover-focus {
     background-color: $bg-default-white;
     color: $color-egyptian-blue;
-    outline: none;
+    outline: 0;
   }
 
   &:active {
     background-color: $bg-default-white;
     color: $color-sapphire;
-    outline: none;
+    outline: 0;
   }
 
   &:disabled {

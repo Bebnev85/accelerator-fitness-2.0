@@ -18,11 +18,11 @@
   color: $color-default-white;
   height: 44px;
   padding: 0 10px;
-  box-sizing: border-box;
+  box-sizing: content-box;
   margin-left: -10px;
 
   @include vp-1199 {
-    width: 100px;
+    width: 80px;
     height: 18px;
 
     &:active {
@@ -33,7 +33,7 @@
   }
 
   @include vp-767 {
-    width: 87px;
+    width: 67px;
     height: 24px;
   }
 
@@ -45,6 +45,10 @@
     border: 1px solid $color-default-white;
     padding: 0 9px;
     outline: none;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -1px;
+    margin-bottom: -1px;
   }
 
   @include active {

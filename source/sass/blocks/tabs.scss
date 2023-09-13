@@ -48,6 +48,16 @@
 
   @include hover-focus {
     border-bottom: 2px solid rgba($color: #d10a42, $alpha: 0.8);
+    outline: none;
+
+    & span {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    border-bottom: 2px solid rgba($color: #d10a42, $alpha: 0.8);
+    outline: none;
 
     & span {
       opacity: 1;
@@ -117,6 +127,7 @@
   border: 2px solid $bg-sapphire;
   cursor: pointer;
   margin-bottom: -1px;
+  user-select: none;
 
   @include hover-focus {
     padding: 26px 43px 24px 45px;
@@ -124,6 +135,7 @@
     background-image: $btn-gradient;
     color: $color-default-white;
     margin: 0;
+    outline: none;
   }
 
   &:active {
@@ -185,7 +197,6 @@
   }
 
   @include hover {
-    padding: 55px 0;
     border: 7px solid transparent;
     border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
     border-image-slice: 1;

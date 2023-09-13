@@ -271,7 +271,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 
   @include vp-1199 {
     &:active {
@@ -290,19 +289,6 @@
 
   @include vp-767 {
     height: 50.5vw;
-  }
-
-  @include hover {
-    button {
-      background: $bg-default-white;
-      color: $color-sapphire;
-
-      &::before {
-        content: "";
-        border: 2px solid $color-sapphire;
-        border-radius: 50%;
-      }
-    }
   }
 }
 
@@ -345,17 +331,26 @@
     }
   }
 
-  @include focus {
-    button {
-      background: $bg-default-white;
-      color: $color-sapphire;
-      outline: none;
+  @include hover {
+    background: $bg-default-white;
+    color: $color-sapphire;
 
-      &::before {
-        content: "";
-        border: 2px solid $color-sapphire;
-        border-radius: 50%;
-      }
+    &::before {
+      content: "";
+      border: 2px solid $color-sapphire;
+      border-radius: 50%;
+    }
+  }
+
+  @include focus {
+    background: $bg-default-white;
+    color: $color-sapphire;
+    outline: none;
+
+    &::before {
+      content: "";
+      border: 2px solid $color-sapphire;
+      border-radius: 50%;
     }
   }
 
@@ -370,7 +365,7 @@
     }
   }
 
-  @include active {
+  &:active {
     width: 58px;
     height: 58px;
     background: $bg-default-white;

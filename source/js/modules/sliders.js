@@ -8,20 +8,19 @@ export const sliderCoachInit = () => {
     },
 
     direction: 'horizontal',
-    loop: false,
+    loop: true,
     slidesPerView: 1,
     slidesPerGroup: 1,
 
     breakpoints: {
       768: {
         slidesPerView: 2,
-        slidesPerGroup: 2,
         spaceBetween: 30,
       },
       1200: {
         slidesPerView: 4,
-        slidesPerGroup: 4,
         spaceBetween: 40,
+        allowTouchMove: false,
       },
     },
   });
@@ -39,6 +38,12 @@ export const sliderReviewsInit = () => {
     loop: false,
     autoHeight: true,
     slidesPerView: 1,
+
+    breakpoints: {
+      1200: {
+        allowTouchMove: false,
+      },
+    },
   });
   return SWIPER;
 };

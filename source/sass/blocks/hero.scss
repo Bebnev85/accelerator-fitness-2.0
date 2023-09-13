@@ -143,10 +143,11 @@
   line-height: 13px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
+  user-select: none;
 
-  @include active {
+  &:active {
     background-color: $bg-default-white;
-    color: $color-sapphire;
+    color: $color-default-black;
     outline: none;
   }
 
@@ -177,6 +178,7 @@
     background-color: $bg-default-white;
     color: $color-egyptian-blue;
     outline: none;
+    opacity: 1;
   }
 
   &:disabled {

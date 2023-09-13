@@ -1,5 +1,5 @@
 export const initVideo = () => {
-  const button = document.querySelector('.main-section__gim-video-conatainer');
+  const button = document.querySelector('.main-section__gim-video-conatainer').querySelector('button');
   const video = document.getElementById('video');
   if (button) {
     button.addEventListener('click', () => {

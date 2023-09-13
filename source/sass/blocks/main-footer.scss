@@ -33,6 +33,7 @@
 .main-footer__logo {
   color: $color-default-white;
   margin-top: 2px;
+  box-sizing: content-box;
 
   @include hover {
     opacity: 0.8;
@@ -42,11 +43,14 @@
     border: 1px solid $color-default-white;
     padding: 0 9px;
     outline: none;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 1px;
+    margin-bottom: -1px;
   }
 
-  @include active {
+  &:active {
     border: none;
-    padding: 0 10px;
   }
 
   &:disabled {
@@ -137,12 +141,13 @@
   }
 
   @include focus {
+    margin-top: -3px;
     padding: 5px 9px;
     border: 1px solid $color-default-white;
     border-radius: 0;
   }
 
-  @include active {
+  &:active {
     border: none;
     outline: none;
 
@@ -201,7 +206,7 @@
     outline: none;
   }
 
-  @include active {
+  &:active {
     color: $color-default-white;
     background-color: $bg-sapphire;
   }
