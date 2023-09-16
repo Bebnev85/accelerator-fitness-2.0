@@ -47,13 +47,17 @@
 
   @include vp-1199 {
     flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 8px;
   }
 
   @include vp-767 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 6px;
+    gap: 8px;
     width: 100%;
+    margin-top: 1px;
   }
 
   &--content {
@@ -70,7 +74,7 @@
   }
 }
 
-.faq__tabs-wrapper button {
+.faq__tabs-wrapper--buttons button {
   min-width: 260px;
   display: flex;
   justify-content: center;
@@ -96,7 +100,7 @@
 
   @include vp-767 {
     min-width: 0;
-    padding: 14px 10px;
+    padding: 13px 10px;
     font-size: 16px;
   }
 
@@ -120,7 +124,7 @@
     @include hover-focus {
       color: $color-sapphire;
       background: $bg-default-white;
-      padding: 17px 10px;
+      padding: 14px 10px;
     }
 
     @include vp-767 {
@@ -198,15 +202,18 @@
 
 .faq__item button {
   display: flex;
+  flex-shrink: 0;
   border-radius: 50%;
   font-size: 0;
   width: 42px;
   height: 42px;
-  min-width: min-content;
+  min-width: 0;
   border: 1px solid #1c3374;
   align-items: center;
   justify-content: center;
   position: relative;
+  background-color: transparent;
+  cursor: pointer;
 
   &:active {
     background: $bg-sapphire;
@@ -219,8 +226,8 @@
   }
 
   @include vp-767 {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     justify-self: end;
   }
 

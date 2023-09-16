@@ -86,19 +86,28 @@
   cursor: pointer;
   user-select: none;
 
-  &:active {
+  @include vp-767 {
+    margin-top: 6px;
+    margin-left: -1px;
+    margin-right: -1px;
+    width: calc(100% + 2px)
+  }
+
+  &:hover {
     background-color: $bg-default-white;
-    color: $color-default-black;
+    color: $color-egyptian-blue;
     outline: none;
   }
 
-  @include vp-767 {
-    margin-top: 6px;
-  }
-
-  @include hover-focus {
+  @include focus {
     background-color: $bg-default-white;
     color: $color-egyptian-blue;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $bg-default-white;
+    color: #000000;
     outline: none;
   }
 

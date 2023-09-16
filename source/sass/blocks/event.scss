@@ -14,7 +14,7 @@
 
   @include vp-767 {
     margin-top: 49px;
-    gap: 29px;
+    gap: 30px;
   }
 }
 
@@ -45,6 +45,7 @@
   @include vp-767 {
     width: 100%;
     height: auto;
+    margin-top: -1px;
   }
 }
 
@@ -67,7 +68,7 @@
     align-items: center;
     width: 100%;
     min-height: 300px;
-    padding-left: 45px;
+    padding: 34px 0 46px;
   }
 }
 
@@ -115,17 +116,7 @@
   line-height: normal;
   letter-spacing: 0.6px;
 
-  @include vp-1199 {
-    &:active {
-      outline: none;
-      padding: 9px;
-      border: 1px solid $color-default-white;
-      margin-left: -10px;
-      margin-bottom: -10px;
-    }
-  }
-
-  @include hover {
+  &:hover {
     opacity: 0.7;
   }
 
@@ -136,6 +127,15 @@
     margin-left: -10px;
     margin-bottom: -9px;
     margin-top: -10px;
+  }
+
+  &:active {
+    outline: none;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid #1c3374;
+    margin: 0;
+    opacity: 1;
   }
 
   &:disabled {
@@ -150,18 +150,18 @@
   font-weight: 700;
   letter-spacing: 0.7px;
 
-  @include vp-1199 {
-    &:active {
-      opacity: 0.8;
-    }
-  }
-
-  @include hover {
+  &:hover {
+    border-bottom: 1px solid #ffffff;
     opacity: 0.8;
   }
 
   @include focus {
     border-color: $color-default-white;
+  }
+
+  &:active {
+    opacity: 1;
+    border-bottom: 1px solid #ffffff;
   }
 }
 

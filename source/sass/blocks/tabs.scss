@@ -28,8 +28,10 @@
   }
 
   @include vp-767 {
-    gap: 40px;
-    align-self: start;
+    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+    // align-self: start;
   }
 }
 
@@ -45,6 +47,7 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 150%;
+  user-select: none;
 
   @include hover-focus {
     border-bottom: 2px solid rgba($color: #d10a42, $alpha: 0.8);
@@ -82,6 +85,7 @@
     letter-spacing: 0.1px;
     padding-bottom: 12px;
     padding-right: 2px;
+    min-width: 60px;
   }
 
   &.is-active {
@@ -162,13 +166,16 @@
   gap: 10px;
   background-color: $bg-default-white;
   padding: 61px 0;
-  min-width: 360px;
+  min-width: 300px;
+  flex-grow: 1;
   position: relative;
   z-index: 1;
   border: 7px solid transparent;
+  max-width: 360px;
 
   @include vp-1199 {
     width: 442px;
+    max-width: initial;
 
     &:active {
       border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
@@ -202,7 +209,7 @@
     border-image-slice: 1;
 
     & a {
-      padding: 29px 46px 22px 42px;
+      padding: 25px 45px 26px 44px;
       border: none;
       background-image: $btn-gradient;
       color: $color-default-white;
@@ -290,6 +297,7 @@
 
   @include vp-767 {
     height: 33px;
+    margin-left: -6px;
   }
 }
 
