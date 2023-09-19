@@ -111,37 +111,38 @@
     padding: 0;
     padding-left: 1px;
     letter-spacing: 0.1px;
+    justify-self: start;
   }
 
   &:hover {
+    margin-bottom: -6px;
     & span {
+      display: block;
       position: relative;
-
-      &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: -5px;
-        width: 100%;
-        height: 1px;
-        background-color: $bg-default-white;
-      }
+      padding-bottom: 5px;
+      border-bottom: 1px solid #ffffff;
     }
   }
 
-  @include focus {
-    margin-top: -3px;
-    padding: 5px 9px;
+  &:focus {
+    margin: -6px;
+    padding: 5px;
     border: 1px solid $color-default-white;
     border-radius: 0;
+
+    & span {
+      padding: 0;
+      border: none;
+    }
   }
 
   &:active {
     border: none;
     outline: none;
 
-    & span::before {
-      display: none;
+    & span {
+      padding: 0;
+      border: none;
     }
   }
 

@@ -18,12 +18,13 @@
     box-sizing: border-box;
     padding-top: 7px;
     padding-bottom: 78px;
+    max-width: none;
   }
 }
 
 
 .hero img {
-  margin-right: 200px;
+  margin-right: 17.24%;
   margin-top: -24px;
 
   @include vp-1199 {
@@ -56,9 +57,9 @@
   }
 
   @include vp-767 {
+    gap: 0;
     row-gap: 10px;
-    max-width: 292px;
-    margin: 52px auto 0;
+    margin: 52px 0 0;
   }
 }
 
@@ -162,6 +163,7 @@
     justify-content: center;
     align-items: center;
     min-width: 294px;
+    grid-column: 1/3;
   }
 
   &:hover {
@@ -205,7 +207,7 @@
 
   @include vp-1199 {
     padding-right: 13px;
-    width: 126px;
+    // width: 126px;
     justify-self: end;
     text-align: right;
     letter-spacing: -0.1px;
@@ -214,8 +216,10 @@
 
   @include vp-767 {
     padding-right: 0;
-    margin-right: -17px;
     margin-bottom: 32px;
     width: auto;
+    grid-column: 1/2;
+    margin-right: -20px;
+    max-width: max-content;
   }
 }

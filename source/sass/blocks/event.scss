@@ -23,10 +23,13 @@
   background-color: $bg-torch-red;
   align-items: stretch;
   flex-grow: 1;
+  width: 48.28%;
+  flex-shrink: 0;
 
   @include vp-1199 {
     justify-content: space-between;
     height: 60.16vw;
+    width: 100%;
   }
 
   @include vp-767 {
